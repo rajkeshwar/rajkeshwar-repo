@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="author" content="Rajkeshwar Prasad">
+         <title>configure</title>
+         <link rel="stylesheet" href="themes/corner-none.min.css" />
+         <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+         <link rel="stylesheet" href="css/jqtree.css" />
+         <link rel="stylesheet" href="css/configure.old.css" />
+         <style type="text/css">
+         	#container {
+		      	background: black;
+		      	overflow:hidden;
+		    }
+         </style>
+         <script src="js/lib/jquery-1.9.1.min.js"></script>
+         <script src="js/lib/jquery.mobile-1.3.2.min.js"></script>
+         <script src="js/lib/tree.jquery.js"></script>
+         <script src="js/lib/kinetic-v5.1.0.js"></script>
+	</head>
+	<body>
+		<div data-role="page">   
+
+			<div data-role="header">
+				<h1>Configurator DC</h1>
+			</div><!-- /header -->
+			<div data-role="header">
+				<div id="header-menu" data-role="navbar" data-iconpos="left">
+					<ul>
+						<li>
+							<a href="#" id="quote_search" class="ui-mini">
+								<span style="margin-left:10px; color:white;">QUOTES SEARCH</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" id="product_tab" class="ui-mini">
+								<span style="margin-left:10px; color:white;">PRODUCT CATALOG</span>
+							</a>
+						</li>
+						<li>
+							<a href="#epmlist" id="configure_tab" data-position-to="#menu-anchor" data-transition="slidedown" data-role="button" class="ui-mini">
+								<span style="margin-left:10px; color:white;">CONFIGURE</span>
+							</a>
+						</li>
+						<li>
+							<a id="config_tree_view" href="#" class="ui-mini">
+								<span style="margin-left:10px; color:white;">ALERT</span>
+							</a>
+						</li>
+						<li><a href="#" class="ui-mini">
+								<span style="margin-left:10px; color:white;">SETTINGS</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div data-role="content" style="padding:15px 0;">					
+				<h1></h1>				 
+				<div id="body-content" data-role="" data-iconpos="left" style="display:inline-block;">
+					
+					<div class="panel left-panel">
+						<div class="btn-controls" style="height:755px;float:left;">
+							<div id="menu-anchor" style="position:absolute;top:150px;left:170px;height:10px;width:10px;z-index:1000;"></div>
+							<div data-role="controlgroup">
+								<a href="#" id="toggle-on" data-role="button" data-icon="cmps-tgl-right" data-iconpos="notext">Delete</a>
+								<a href="#ctxmenu" data-rel="popup" data-position-to="#menu-anchor" data-transition="slidedown" data-role="button" data-icon="cmps-tools-ctxmenu" data-iconpos="notext">Menu</a>
+								<a href="#" id="dialog_open" data-rel="dialog" data-transition="pop" data-role="button" data-icon="cmps-tools-switchview" data-iconpos="notext">Toggle View</a>
+							</div>
+							<div data-role="controlgroup">
+								<a href="#" id="deleteIns" data-role="button" data-icon="delete" data-iconpos="notext">Delete</a>
+								<a href="#" id="copy" data-role="button" data-icon="cmps-ctx-copy" data-iconpos="notext">Copy</a>
+								<a href="#" id="paste" data-role="button" data-icon="cmps-ctx-paste" data-iconpos="notext">Paste</a>
+								<a href="#" id="cut" data-role="button" data-icon="cmps-ctx-cut" data-iconpos="notext">Cut</a>
+							</div>
+						</div>
+						<div id="tree-out-cont" class="clearfix" style="display:inline-block;float:right;">
+							<div class="tree-header"> 
+								<a href="#" data-role="button" data-icon="cmps-tgl-left" data-iconpos="right">Configure</a>
+							</div>
+							<div class="tree-container" style="height:647px;overflow:auto;">
+								<div id="configtree" class="jqtree-overflow">
+									<!--tree will be loaded here -->
+								</div> 
+							</div>
+							<div class="" style="margin:10px;">
+								<fieldset data-role="controlgroup" data-type="horizontal">
+								    <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+							     	<label for="radio-choice-1">Configure 1</label>
+
+							     	<input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+							     	<label for="radio-choice-2">Configure 2</label>
+								</fieldset>
+							</div>							
+						</div>						
+										
+					</div>
+					
+					<div id="right-panel" class="panel right-panel background" style="width:74%;position:absolute;top:127px;left:310px;"> 
+                        <div class="body-header-tabs">
+	                        <div id="class_type_group" data-role="collapsible" data-iconpos="right" data-content-theme="c">
+							    <h3>Add components to: Panelboard</h3>						
+							</div>
+                        </div>
+                        <div id="tab-controls" class="panel right-panel inner" style="height:602px;">
+                  			<!-- tab data will be populated here -->
+                        </div>  
+                        <table class="panel banner">
+						   <tr>
+						   	  <td>
+						   	    <div style="width:200px;" class="ui-td-inner">
+						          <a href="#" id="res_cflct" data-role="button" data-icon="alert" data-iconpos="notext">Conflicted</a>
+						        </div>
+						      </td>
+						      <td>
+						         <div id="c_number" class="ui-td-inner">Catalog Number:</div>
+						      </td>
+						      <td>
+						         <div id="c_price" class="ui-td-inner">Current Price:</div>
+						      </td>
+						      <td>
+						         <div id="t_poles" class="ui-td-inner">Total Poles:</div>
+						      </td>
+						   </tr>
+						</table>                       
+					</div>	
+					
+					<!-- GC view section starts -->
+					<div id="gcLayout" class="panel right-panel background" style="width: 93%; position: absolute; top: 128px; left: 64px;display: none;"> 
+                        <div class="body-header-tabs">
+	                        <div data-role="collapsible" data-iconpos="right" data-content-theme="c">
+							    <h3>GC view is in progress</h3>							    
+							</div>
+                        </div>
+                        <div class="panel right-panel inner" style="height:723px;">
+                  			<div id="container"></div>
+                  			<div id="config_tree_cont">
+                  				<div id=config_tree_view" class="jqtree-overflow">
+									<!--tree will be loaded here -->
+								</div> 
+                  			</div>
+                        </div>  
+                                                                   
+					</div><!--/ GC view section ends -->			
+				</div>
+				<div class="body-horizontal-margin"></div>
+				<div class="ui-corner-all"></div>	
+				<div data-role="popup" id="errormsg" style="width:220px;"></div>
+				<div data-role="popup" id="epmlist">
+					<h3>Epm lists</h3>
+					<ul data-role="listview" data-filter="true" style="width:450px;height:600px;overflow:auto;"></ul>
+				</div>
+				<div data-role="popup" id="ctxmenu" style="width:220px;">
+					<h3>File</h3>
+					<ul data-role="listview">
+						<li><a id="newConfig" href="#">New</a></li>
+						<li><a id="saveClose" href="#">Save & Close</a></li>
+						<li><a id="globalTemplate" href="#">Template</a></li>
+					</ul>
+					<h3>Layout</h3>
+					<ul data-role="listview">
+						<li><a id="autoLayout" href="#">Auto Layout</a></li>
+						<li><a href="#">Mannual Layout</a></li>
+						<li><a href="#">Delete Layout</a></li>
+					</ul>
+					<h3>Layout View</h3>
+					<div class="ctx-layout">
+						<fieldset data-role="controlgroup" data-type="horizontal">
+						    <input type="radio" name="layout" id="layout-1" data-mini="true" value="choice-1" checked="checked" />
+					     	<label for="layout-1">Auto</label>
+
+					     	<input type="radio" name="layout" id="layout-2" data-mini="true" value="choice-2"  />
+					     	<label for="layout-2">Manual</label>
+						</fieldset>
+					</div>
+					<h3>Other</h3>
+					<ul data-role="listview">
+						<li><a href="#">Resolve Conflict</a></li>
+						<li><a href="#">Unassembled</a></li>
+					</ul>
+				</div> 	
+				<!-- popup section to show some message	-->
+				<div data-role="popup" id="msgPopup1" data-tolerance="15,15" style="padding:20px;">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<h3>File</h3>
+					<h4>message content<h4>
+				</div>
+				<div data-role="popup" id="msgPopup" data-overlay-theme="a" data-theme="c" style="min-width:400px;">
+					<div data-role="header" data-theme="a" class="ui-corner-top">
+						<h1><!-- heading here --></h1>
+					</div>
+					<div data-role="content" data-theme="d" class="ui-content">
+						<div data-msg="msg">
+							<h3 class="ui-title"><!-- title here --></h3>
+							<div class="msg"><!-- server-message goes here --></div> 
+						</div>
+						<div data-btn="btnset"></div>
+					</div>
+				</div>				
+			</div><!-- /content -->
+			
+			<div data-role="footer">
+				<h4>@COMPAS</h4>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		
+		<!-- dialog page 	-->
+		<div data-role="page" data-rel="dialog" id="msgDialog" data-theme="c" data-close-btn="right">
+		    <div data-role="header" data-theme="a"><h1><!--message header--></h1></div>	
+			<div role="main" class="ui-content">
+				<div><!--message content--></div>			
+				<a href="#" data-role="button" data-rel="back" data-theme="b">Ok</a>
+			</div>
+		</div><!-- /dialog page -->
+		
+		<script src="js/config.main.js"></script> 
+        <script src="js/config.tree.js"></script> 
+        <script src="js/config.ui.js"></script>
+        <script src="js/config.commands.js"></script>
+        <script src="js/config.options.js"></script>
+        <script src="js/config.toolbar.js"></script>
+        <script src="js/config.jquery.js"></script>        
+    	<script defer="defer" src="js/config.gclite.js"></script>
+        <script type="text/javascript">
+	         
+            $(document).ready(function(){
+
+            	$("#delete_btn").click(function(){
+                	console.log('delete is called');
+            		$("#msgPopup").popup("open");
+              	});				
+            });
+            
+         </script>             
+	</body>
+</html>

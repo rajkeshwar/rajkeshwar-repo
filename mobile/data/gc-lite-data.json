@@ -1,0 +1,340 @@
+{
+    "config": [
+        {
+            "insId": 2,
+            "entity": {
+                "posX": 0,
+                "posY": 0,
+                "height": 0,
+                "width": 0
+            },
+            "parent": 2,
+            "number": "2",
+            "insName": "TYZ:A7J_WORKBENCH"
+        },
+        {
+            "insId": 2,
+            "entity": {
+                "posX": 0,
+                "posY": 0,
+                "height": 32,
+                "width": 20
+            },
+            "parent": 2,
+            "number": "2",
+            "insName": "TYZ:PB_SECTION"
+        },
+        {
+            "insId": 3,
+            "entity": {
+                "posX": 0,
+                "posY": 0,
+                "height": 32,
+                "width": 20
+            },
+            "parent": 2,
+            "number": "7",
+            "insName": "TYZ:PB_INTERIOR"
+        },
+        {
+            "insId": 3,
+            "entity": {
+                "posX": 0.75,
+                "posY": 20.5,
+                "height": 10.75,
+                "width": 18.5
+            },
+            "parent": 7,
+            "number": "8",
+            "insName": "TYZ:PB_MAIN_AREA"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 7.5,
+                "posY": 23.88,
+                "height": 4,
+                "width": 5
+            },
+            "parent": 8,
+            "number": "9",
+            "insName": "TYZ:PB_MAINS"
+        },
+        {
+            "insId": 3,
+            "entity": {
+                "posX": 0.75,
+                "posY": 11.5,
+                "height": 9,
+                "width": 18.5
+            },
+            "parent": 7,
+            "number": "8",
+            "insName": "TYZ:PB_USP_AREA"
+        },
+        {
+            "insId": 3,
+            "entity": {
+                "posX": 0.75,
+                "posY": 11.5,
+                "height": 9,
+                "width": 18.5
+            },
+            "parent": 8,
+            "number": "11",
+            "insName": "TYZ:PB_KIT"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 4.51,
+                "posY": 19.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_VL_MCCB"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 11,
+                "posY": 19.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 4.51,
+                "posY": 18.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 11,
+                "posY": 18.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 4.51,
+                "posY": 17.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 11,
+                "posY": 17.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 4.51,
+                "posY": 16.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 11,
+                "posY": 16.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 4.51,
+                "posY": 15.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 11,
+                "posY": 15.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 4.51,
+                "posY": 14.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 11,
+                "posY": 14.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 4.51,
+                "posY": 13.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 11,
+                "posY": 13.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 4.51,
+                "posY": 12.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 11,
+                "posY": 12.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 4.51,
+                "posY": 11.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 4,
+            "entity": {
+                "posX": 11,
+                "posY": 11.5,
+                "height": 1,
+                "width": 4.49
+            },
+            "parent": 11,
+            "number": "12",
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 3,
+            "entity": {
+                "posX": 0.75,
+                "posY": 0.75,
+                "height": 10.75,
+                "width": 18.5
+            },
+            "parent": 7,
+            "number": "8",
+            "insName": "TYZ:PB_SFD_AREA"
+        },
+        {
+            "insId": 3,
+            "entity": {
+                "posX": 0,
+                "posY": 0,
+                "height": 0,
+                "width": 0
+            },
+            "parent": 2,
+            "number": "7",
+            "insName": "TYZ:PB_ENCLOSURE"
+        },
+        {
+            "insId": 3,
+            "entity": {
+                "posX": 0,
+                "posY": 0,
+                "height": 0,
+                "width": 0
+            },
+            "parent": 2,
+            "number": "7",
+            "insName": "TYZ:PB_FRONT"
+        }
+    ]
+}

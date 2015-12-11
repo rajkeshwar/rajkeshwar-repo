@@ -1,0 +1,287 @@
+﻿{
+    "EPM": {
+        "modelName": "TYZ:PANELBOARD",
+        "epmType": "P1",
+        "userData": {
+            "Element": {
+                "name": "TYZ:PANELBOARD",
+                "Cstic": [{
+                        "Data": [
+                            {
+                                "value": "P1-250A MLO 480Y/277 3Φ 4W – 14000 IRP1",
+                                "desc": "P1-250A MLO 480Y/277 3Φ 4W – 14000 IRP1"
+                            },
+                            {
+                                "value": "P1-400A MLO 480Y/277 3Φ 4W – 14000 IRP1",
+                                "desc": "P1-400A MLO 480Y/277 3Φ 4W – 14000 IRP1"
+                            },
+							{
+                                "value": "P1-200A MB 480Y/277 3Φ 4W – 14000 IRP1",
+                                "desc": "P1-200A MB 480Y/277 3Φ 4W – 14000 IRP1"
+                            },
+                            {
+                                "value": "P1-225A MB 480Y/277 3Φ 4W – 14000 IRP1",
+                                "desc": "P1-225A MB 480Y/277 3Φ 4W – 14000 IRP1"
+                            },
+							{
+                                "value": "P1-250A MLO 208Y/120 3Φ 4W – 10000 IRP1",
+                                "desc": "P1-250A MLO 208Y/120 3Φ 4W – 10000 IRP1"
+                            },
+                            {
+                                "value": "P1-400A MLO 208Y/120 3Φ 4W – 10000 IR",
+                                "desc": "P1-400A MLO 208Y/120 3Φ 4W – 10000 IR"
+                            },
+							{
+                                "value": "P1-200A MB 208Y/120 3Φ 4W – 10000 IRP1",
+                                "desc": "P1-200A MB 208Y/120 3Φ 4W – 10000 IRP1"
+                            },
+                            {
+                                "value": "P1-225A MB 208Y/120 3Φ 4W – 10000 IRSelect",
+                                "desc": "P1-225A MB 208Y/120 3Φ 4W – 10000 IRSelect"
+                            }
+                        ],
+                        "name": "A7JPB_QUICK_CONFIGURATION",
+                        "displayName": "Quick Configuration",
+                        "controlinfo": "RADIOB",
+                        "defaultValue": "P1-250A MLO 480Y/277 3Φ 4W – 14000 IRP1"
+                    },
+
+				{
+                        "Data": [
+                            {
+                                "value": "P1-250A MLO 480Y/277 3Φ 4W – 14000 IRP1",
+                                "desc": "P1-250A MLO 480Y/277 3Φ 4W – 14000 IRP1"
+                            },
+                            {
+                                "value": "P1-400A MLO 480Y/277 3Φ 4W – 14000 IRP1",
+                                "desc": "P1-400A MLO 480Y/277 3Φ 4W – 14000 IRP1"
+                            },
+							{
+                                "value": "P1-200A MB 480Y/277 3Φ 4W – 14000 IRP1",
+                                "desc": "P1-200A MB 480Y/277 3Φ 4W – 14000 IRP1"
+                            },
+                            {
+                                "value": "P1-225A MB 480Y/277 3Φ 4W – 14000 IRP1",
+                                "desc": "P1-225A MB 480Y/277 3Φ 4W – 14000 IRP1"
+                            },
+							{
+                                "value": "P1-250A MLO 208Y/120 3Φ 4W – 10000 IRP1",
+                                "desc": "P1-250A MLO 208Y/120 3Φ 4W – 10000 IRP1"
+                            },
+                            {
+                                "value": "P1-400A MLO 208Y/120 3Φ 4W – 10000 IR",
+                                "desc": "P1-400A MLO 208Y/120 3Φ 4W – 10000 IR"
+                            },
+							{
+                                "value": "P1-200A MB 208Y/120 3Φ 4W – 10000 IRP1",
+                                "desc": "P1-200A MB 208Y/120 3Φ 4W – 10000 IRP1"
+                            },
+                            {
+                                "value": "P1-225A MB 208Y/120 3Φ 4W – 10000 IRSelect",
+                                "desc": "P1-225A MB 208Y/120 3Φ 4W – 10000 IRSelect"
+                            }
+                        ],
+                        "name": "A7JPB_SELECT_A_QUICK_CONFIGURATION",
+                        "displayName": "Select a Quick Configuration",
+                        "controlinfo": "RADIOB",
+                        "defaultValue": "P1-250A MLO 480Y/277 3Φ 4W – 14000 IRP1"
+                    },
+
+                    {
+                        "Data": [
+                            {
+                                "value": "ALUM",
+                                "desc": "Aluminum"
+                            },
+                            {
+                                "value": "COPPER",
+                                "desc": "Copper"
+                            }
+                        ],
+                        "name": "A7JPB_BUS_MATERIAL",
+                        "displayName": "Main Bus Material",
+                        "controlinfo": "RADIOB",
+                        "defaultValue": "ALUM"
+                    },
+                    {
+                        "Data": [
+                            {
+                                "value": "AL/CU",
+                                "desc": "Al/Cu"
+                            },
+                            {
+                                "value": "COPPER ONLY",
+                                "desc": "Copper Only"
+                            },
+                            {
+                                "value": "INSULATED AL/CU",
+                                "desc": "Insulated Al/Cu"
+                            },
+                            {
+                                "value": "INSULATED COPPER ONLY",
+                                "desc": "Insulated Copper only"
+                            }
+                        ],
+                        "name": "A7JPB_GND_CONN_OPTIONS",
+                        "displayName": "Gnd. Conn. Options",
+                        "controlinfo": "RADIOB",
+                        "defaultValue": "AL/CU"
+                    },
+                    {
+                        "Data": [
+                            {
+                                "value": "NONE",
+                                "desc": "None"
+                            },
+                            {
+                                "value": "SINGLE",
+                                "desc": "Single"
+                            }
+                        ],
+                        "name": "A7JPB_MASTER_NP",
+                        "displayName": "Master NP",
+                        "controlinfo": "RADIOB",
+                        "defaultValue": "NONE"
+                    },
+					
+					{
+                        "name": "A7J_DESIGNATION",
+                        "displayName": "Designation",
+                        "controlinfo": "TABLE",
+                        "defaultValue": ""
+                    }
+                ]
+            }
+        },
+        "dBData": {
+            "Config": [
+                {
+                    "user": "ftcc08",
+                    "rank": 1,
+                    "desc": "P1 - 250A MLO 120/240 1Ø 3W - 10,000 IR",
+                    "type": "1"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 1,
+                    "desc": "P1 - 100A MB 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 2,
+                    "desc": "P1 - 125A MB 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 3,
+                    "desc": "P1 - 125A MB 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 4,
+                    "desc": "P1 - 125A MLO 120/240 1Ø 3W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 5,
+                    "desc": "P1 - 125A MLO 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 6,
+                    "desc": "P1 - 125A MLO 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 7,
+                    "desc": "P1 - 125A MLO 208Y/120 3Ø 4W - 18,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 8,
+                    "desc": "P1 - 225A MB 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 9,
+                    "desc": "P1 - 225A MB 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 10,
+                    "desc": "P1 - 225A MB 240 3Ø 3W - 35,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 11,
+                    "desc": "P1 - 250A MB 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 12,
+                    "desc": "P1 - 250A MB 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 13,
+                    "desc": "P1 - 250A MB 208Y/120 3Ø 4W - 65,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 14,
+                    "desc": "P1 - 250A MLO 120/240 1Ø 3W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 15,
+                    "desc": "P1 - 250A MLO 120/240 1Ø 3W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 16,
+                    "desc": "P1 - 250A MLO 120/240 1Ø 3W - 14,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 17,
+                    "desc": "P1 - 250A MLO 120/240 1Ø 3W - 18,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 18,
+                    "desc": "P1 - 250A MLO 120/240 1Ø 3W - 35,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 19,
+                    "desc": "P1 - 250A MLO 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                },
+                {
+                    "user": "NTA000",
+                    "rank": 20,
+                    "desc": "P1 - 250A MLO 208Y/120 3Ø 4W - 10,000 IR",
+                    "type": "2"
+                }
+            ]
+        }
+    }
+}

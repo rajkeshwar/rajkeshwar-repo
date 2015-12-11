@@ -1,0 +1,2353 @@
+/* Minification failed. Returning unminified contents.
+(2022,60): run-time error CSS1038: Expected hex color, found '#eeeeee100'
+(2022,70): run-time error CSS1019: Unexpected token, found '%'
+(2022,70): run-time error CSS1027: Expected semi-colon or close brace, found '%'
+(4009,25): run-time error CSS1027: Expected semi-colon or close brace, found ':'
+(4012,20): run-time error CSS1027: Expected semi-colon or close brace, found ':'
+ */
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+
+/* NAVIGATION BAR */
+
+#navbar ul li
+     {
+         width:15%;
+      /* padding-left:20%;
+       padding-right:20%;*/
+     }
+  #navbar ul > li:first-child
+  {
+      width:10%;
+  }
+
+#status {
+    background: #feffb1;
+    border: 1px solid #e6e837;
+    -moz-border-radius: .25em;
+    -webkit-border-radius: .25em;
+    border-radius: .25em;
+    display: none;
+    font-size: .75em;
+    font-weight: bold;
+    margin: 1em 0;
+    padding: 1em;
+    z-index: 1000;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    box-shadow:1px 1px 3px rgba(129, 129, 129, 0.5);
+}
+
+.field-validation-error
+{
+    color: #f00;
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #f00;
+}
+
+.hidePanel, .validation-summary-valid
+{
+    display: none;
+}
+    
+.content-primary
+{
+    width: 75%;
+    left:25%;
+    float: right;
+}
+
+    
+        .content-primary-expand
+    {
+         width: 96%;
+       left:4%;
+        }
+        
+        
+.content-secondary
+{
+    width: 25%;
+    float: left;
+}
+
+.rightBorder
+{
+    border-right: 1px solid #CCCCCC;
+}
+.leftBorder
+{
+    border-left: 1px solid #CCCCCC;
+}
+.textArrange
+{
+    text-align: center;
+}
+
+/*..Q select style.*/
+
+
+.cols-2
+{
+-moz-column-count:2;
+-moz-column-gap:10px;
+-webkit-column-count:2;
+-webkit-column-gap:10px;
+column-count:2;
+column-gap:10px;}
+
+.cols-3{
+-moz-column-count:3;
+-moz-column-gap:10px;
+-webkit-column-count:3;
+-webkit-column-gap:10px;
+column-count:3;
+column-gap:10px;}
+
+.cols-4{
+-moz-column-count:4;
+-moz-column-gap:10px;
+-webkit-column-count:4;
+-webkit-column-gap:10px;
+column-count:4;
+column-gap:10px;}
+
+.cols-5{
+-moz-column-count:5;
+-moz-column-gap:10px;
+-webkit-column-count:5;
+-webkit-column-gap:10px;
+column-count:5;
+column-gap:10px;
+}
+
+/* jQuery mobile styles
+-----------------------------------------------------------*/
+
+/* Make listview buttons fill the whole horizontal width of the screen */
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li
+{
+    padding-right: 15px;
+}
+
+.ui-bar-a, .ui-body-a, .ui-btn-up-a, .ui-btn-hover-a, .ui-btn-down-a, .ui-bar-b, .ui-body-b, .ui-btn-up-b, .ui-btn-hover-b, .ui-btn-down-b, .ui-bar-c, .ui-body-c, .ui-btn-up-c, .ui-btn-hover-c, .ui-btn-down-c, .ui-bar-d, .ui-body-d, .ui-btn-up-d, .ui-btn-hover-d, .ui-btn-down-d, .ui-bar-e, .ui-body-e, .ui-btn-up-e, .ui-btn-hover-e, .ui-btn-down-e, .ui-btn-active
+{
+    text-shadow: none;
+    font:14px bold,#2e98d4; 
+}
+
+.portraitbutton
+{
+    /*visibility: hidden;*/
+    display:none;
+}
+
+
+
+.ui-landscape-backbutton
+{
+    display:block;
+}
+
+.ui-landscape-backbutton-settings
+{
+   visibility:visible;
+}
+
+.overlaymenu
+{
+    border:1px solid #CCCCCC;
+    visibility: visible;
+    width: 25%;
+    float: left;
+    position:absolute;
+    /*overflow:auto;*/
+    background:#eeeeee;
+    bottom:12px;
+    top:104px;
+    left:0px;
+    z-index:0;
+    -webkit-box-shadow: 1px 1px 2px rgba(129, 129, 129, 0.5);
+    -moz-box-shadow:    1px 1px 3px rgba(129, 129, 129, 0.5);
+    box-shadow:         1px 1px 3px rgba(129, 129, 129, 0.5);
+
+ }
+body
+{
+    background-color: #000;
+    font-size: 16px;
+    color: #fff;
+    font-family:Arial;
+}
+
+
+.pagination a
+{
+    text-decoration: none;
+    /*border: solid 1px #999;*/
+    color: #000; /* border-radius: 20px;*/
+}
+.pagination a, .pagination span
+{
+    display: block;
+    width: 30px;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.pagination .current
+{
+    background: #456F9A;
+    color: #fff;
+    border: solid 1px #5E87B0;
+    border-radius: 20px;
+}
+.pagination .current.prev, .pagination .current.next
+{
+    color: #999;
+    border-color: #999;
+    background: #fff;
+    border-radius: 20px;
+}
+
+#wrapper
+{
+    overflow: hidden;
+}
+
+
+#headerTitle
+{
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px;
+    font-family:Arial;
+}
+
+#primaryHeaderLeftDiv
+{
+    display: inline;
+    float: left;
+    width: 45%;
+}
+
+#primaryHeaderCenterDiv
+{
+    display: inline;
+    width: 25%;
+}
+
+#primaryHeaderRightDiv
+{
+    display: inline;
+    float: right;
+    width: 30%;
+}
+
+.quoteMenuItem
+{
+    /*height: 500px;*/ /*min-height:360px;*/
+    max-height: 345px;
+    overflow: auto;
+}
+
+.quotePopupItem
+    {
+        max-height: 130px;
+        overflow: auto;
+    }
+
+.quoteUserPopupItem
+    {
+        height: 150px;
+        width:350px;
+        overflow: auto;
+    }
+    
+
+
+
+
+/*-------------- Section which adds the ballon effect for the popups in the Search Quote screen --------------------*/
+#popupTechnicalStatus-popup::before
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    left:-13%;
+    top:45%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:0;
+}
+
+#popupTechnicalStatus-popup::after
+{
+    content:" ";
+    border-left:16px solid transparent;
+    border-bottom:16px solid #eeeeee;
+    border-right:16px solid transparent;
+    position:absolute;
+    left:-11%;
+    top:46%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:0;
+}
+
+
+#popupCRReasons-popup::before
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    left:-8%;
+    top:47.5%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:0;
+}
+
+#popupCRReasons-popup::after
+{
+  content:" ";
+    border-left:16px solid transparent;
+    border-bottom:16px solid #eeeeee;
+    border-right:16px solid transparent;
+    position:absolute;
+    left:-7%;
+    top:48%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:0;  
+}
+
+#popupDocType-popup::before
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    left:-11.5%;
+    top:47%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:0;
+}
+
+#popupDocType-popup::after
+{
+    content:" ";
+    border-left:16px solid transparent;
+    border-bottom:16px solid #eeeeee;
+    border-right:16px solid transparent;
+    position:absolute;
+    left:-10%;
+    top:47.5%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:0;
+}
+
+#popupJobStatus-popup::before
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    left:-9.5%;
+    top:47%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:0;  
+}
+
+#popupJobStatus-popup::after
+{
+    content:" ";
+    border-left:16px solid transparent;
+    border-bottom:16px solid #eeeeee;
+    border-right:16px solid transparent;
+    position:absolute;
+    left:-8%;
+    top:47.8%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:0;
+}
+
+#popupScenario-popup::before
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    left:-16%;
+    top:47%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:0;  
+}
+
+#popupScenario-popup::after
+{
+    content:" ";
+    border-left:16px solid transparent;
+    border-bottom:16px solid #eeeeee;
+    border-right:16px solid transparent;
+    position:absolute;
+    left:-14%;
+    top:47.5%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:0;
+}
+
+#popupInitialSalesReview-popup::before, #popupOrderEngineeringStatus-popup::before, #popupLeadTimeReview-popup::before  
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    left:-13%;
+    top:43.5%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:0; 
+}
+
+#popupInitialSalesReview-popup::after, #popupOrderEngineeringStatus-popup::after, #popupLeadTimeReview-popup::after 
+{
+    content:" ";
+    border-left:16px solid transparent;
+    border-bottom:16px solid #eeeeee;
+    border-right:16px solid transparent;
+    position:absolute;
+    left:-11%;
+    top:45%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:0; 
+}
+
+#popupPricingStatus-popup::before, #popupHoldStatus-popup::before
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    left:-13%;
+    top:43%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:0; 
+}
+
+#popupPricingStatus-popup::after, #popupHoldStatus-popup::after
+{
+    content:" ";
+    border-left:16px solid transparent;
+    border-bottom:16px solid #eeeeee;
+    border-right:16px solid transparent;
+    position:absolute;
+    left:-11%;
+    top:44%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:0; 
+}
+
+#divUserSearch::before
+{
+    content:" ";
+    border-left:15px solid transparent;
+    border-bottom:15px solid #eeeeee;
+    border-right:15px solid transparent;
+    position:absolute;
+    left:-9.5%;
+    top:47%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:1;
+}
+
+#divUserSearch::after
+{
+    content:" ";
+    border-left:21px solid transparent;
+    border-bottom:21px solid rgba(0, 0, 0, 0.5);
+    border-right:21px solid transparent;
+    position:absolute;
+    left:-11.5%;
+    top:46%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:-1;
+}
+
+
+#divUserSelect::before
+{
+    content:" ";
+    border-left:15px solid transparent;
+    border-bottom:15px solid #eeeeee;
+    border-right:15px solid transparent;
+    position:absolute;
+    left:-6%;
+    top:67%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:0;
+}	
+
+#divUserSelect::after
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    left:-7.5%;
+    top:66%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:-1;
+}
+
+#configureLineItemTableFind-popup::before, #configureCPLineItemTableFind-popup::before
+{
+    content:" ";
+    border-left:16px solid transparent;
+    border-bottom:16px solid #eeeeee;
+    border-right:16px solid transparent;
+    position:absolute;
+    right:10%;
+    top:-5%;
+    opacity:1;
+    z-index:1;
+}	
+
+#configureLineItemTableFind-popup::after, #configureCPLineItemTableFind-popup::after
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    right:8.5%;
+    top:-6%;
+    opacity:0.3;
+    z-index:-1;
+}
+
+#popupPlant-popup::before
+{
+    content:" ";
+    border-left:20px solid transparent;
+    border-bottom:20px solid rgba(0, 0, 0, 0.5);
+    border-right:20px solid transparent;
+    position:absolute;
+    left:-21%;
+    top:46%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:0.5;
+    z-index:-1;  
+}
+
+#popupPlant-popup::after
+{
+    content:" ";
+    border-left:16px solid transparent; 
+    border-bottom:16px solid #eeeeee;
+    border-right:16px solid transparent;
+    position:absolute;
+    left:-18%;
+    top:47%;
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+    opacity:1;
+    z-index:0;   
+}
+
+#configurepopup-popup::before, #configurepopupQuotes-popup::before, #configureLineItemTableSettings-popup::before,
+#configureCPLineItemTableSettings-popup::before, #designationUI-popup::before
+{
+    content:" ";
+    border-left:16px solid transparent;
+    border-top:16px solid rgba(0, 0, 0, 0.5);
+    border-right:16px solid transparent;
+    position:absolute;
+    z-index:-1;
+    top:99%;
+    left:3px;
+    opacity:0.5;
+}
+
+#configurepopup-popup::after, #configurepopupQuotes-popup::after, #configureLineItemTableSettings-popup::after,
+#configureCPLineItemTableSettings-popup::after
+{
+    content:" ";
+    border-left:12px solid transparent; 
+    border-top:12px solid #eeeeee;
+    border-right:12px solid transparent;
+    position:absolute;
+    z-index:1;
+    top:99%;
+    left:6px;
+}
+
+#pContentDivQuotes, #QuotesTabContainer, #ReportsContainer, #ProposalActionContainer,
+#SubmittalContainer, #pContentDivProd, #pDetailsDiv, #divDrawingPreferences, #gDrawPanel
+{
+    -webkit-box-shadow: 1px 1px 2px rgba(129, 129, 129, 0.5);
+    -moz-box-shadow:    1px 1px 3px rgba(129, 129, 129, 0.5);
+    box-shadow:         1px 1px 3px rgba(129, 129, 129, 0.5);
+
+}
+
+#userPopup-popup::before
+{
+    content:" ";
+    border-left:14px solid transparent;
+    border-bottom:14px solid rgba(0, 0, 0, 0.5);
+    border-right:14px solid transparent;
+    position:absolute;
+    z-index:-1;
+    right:1px;
+    bottom:97%;
+    opacity:0.5;
+}
+
+#userPopup-popup::after
+{
+    content:" ";
+    border-left:12px solid transparent; 
+    border-bottom:12px solid #eeeeee;
+    border-right:12px solid transparent;
+    position:absolute;
+    z-index:1;
+    right:3px;
+    bottom:97%;
+}
+
+#reportdownloadlink-popup::before
+{
+    content:" ";
+    border-left:14px solid transparent;
+    border-bottom:14px solid rgba(0, 0, 0, 0.5);
+    border-right:14px solid transparent;
+    position:absolute;
+    z-index:-1;
+    right:1px;
+    bottom:97%;
+    opacity:0.5;
+}
+
+#reportdownloadlink-popup::after
+{
+    content:" ";
+    border-left:12px solid transparent; 
+    border-bottom:12px solid #eeeeee;
+    border-right:12px solid transparent;
+    position:absolute;
+    z-index:1;
+    right:3px;
+    bottom:97%;
+}
+
+
+#optionpopup-popup::before
+{
+    content:" ";
+    border-left:14px solid transparent;
+    border-bottom:14px solid rgba(0, 0, 0, 0.5);
+    border-right:14px solid transparent;
+    position:absolute;
+    z-index:-1;
+    right:1px;
+    bottom:97%;
+    opacity:0.5;
+}
+
+#optionpopup-popup::after
+{
+    content:" ";
+    border-left:12px solid transparent; 
+    border-bottom:12px solid #eeeeee;
+    border-right:12px solid transparent;
+    position:absolute;
+    z-index:1;
+    right:3px;
+    bottom:97%;
+}
+#optionpopupViewDocument-popup::before
+{
+    content:" ";
+    border-left:14px solid transparent;
+    border-bottom:14px solid rgba(0, 0, 0, 0.5);
+    border-right:14px solid transparent;
+    position:absolute;
+    z-index:-1;
+    right:1px;
+    bottom:97%;
+    opacity:0.5;
+}
+
+#optionpopupViewDocument-popup::after
+{
+    content:" ";
+    border-left:12px solid transparent; 
+    border-bottom:12px solid #eeeeee;
+    border-right:12px solid transparent;
+    position:absolute;
+    z-index:1;
+    right:3px;
+    bottom:97%;
+}
+#optionpopupreport-popup::before
+{
+    content:" ";
+    border-left:14px solid transparent;
+    border-bottom:14px solid rgba(0, 0, 0, 0.5);
+    border-right:14px solid transparent;
+    position:absolute;
+    z-index:-1;
+    right:1px;
+    bottom:97%;
+    opacity:0.5;
+}
+
+#optionpopupreport-popup::after
+{
+    content:" ";
+    border-left:12px solid transparent; 
+    border-bottom:12px solid #eeeeee;
+    border-right:12px solid transparent;
+    position:absolute;
+    z-index:1;
+    right:3px;
+    bottom:97%;
+}
+
+#pagerPopup-popup::before, #pagerPopupProd-popup::before, #LineItemPagerPopup-popup::before, #LineItemFilterPagerPopup-popup::before, #CPLineItemPagerPopup-popup::before
+{
+    content:" ";
+    border-left:14px solid transparent;
+    border-top:14px solid rgba(0, 0, 0, 0.5);
+    border-right:14px solid transparent;
+    position:absolute;
+    z-index:-1;
+    right:0px;
+    top:98%;
+    opacity:0.5;
+}
+
+#pagerPopup-popup::after, #pagerPopupProd-popup::after, #LineItemPagerPopup-popup::after, #LineItemFilterPagerPopup-popup::after, #CPLineItemPagerPopup-popup::after
+{
+    content:" ";
+    border-left:12px solid transparent; 
+    border-top:12px solid #eeeeee;
+    border-right:12px solid transparent;
+    position:absolute;
+    z-index:1;
+    right:3px;
+    top:97%;
+}
+
+#actionpopup-popup::before
+{
+    content:" ";
+    border-left:14px solid transparent;
+    border-bottom:14px solid rgba(0, 0, 0, 0.5);
+    border-right:14px solid transparent;
+    position:absolute;
+    z-index:-1;
+    right:1px;
+    bottom:97%;
+    opacity:0.5;
+}
+
+#actionpopup-popup::after
+{
+    content:" ";
+    border-left:12px solid transparent; 
+    border-bottom:12px solid #eeeeee;
+    border-right:12px solid transparent;
+    position:absolute;
+    z-index:1;
+    right:3px;
+    bottom:97%;
+}
+
+/* --------------------------------- End of ballon section for popups ----------------------------------------------------------*/
+
+ #sContentDivQuotes, #sContentDiv
+    {
+       /* height:100%;
+        border-right: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;*/
+        
+    }
+ 
+ #searchProductDiv
+    {
+      height:auto;
+    }
+    
+ .QuoteAdvancedPanel, .QuoteSimplePanel
+ {
+   /*height:623px;  */
+ }
+     
+ #searchSimple
+ {
+     /*height:100%;
+     border-right: 1px solid #CCCCCC;
+     border-left: 1px solid #CCCCCC;*/
+    
+ }
+ 
+ .productbrowse
+{
+    /*min-height:550px;*/
+    height: 100%; /* max-height: 675px;*/ /*height: 675px;*/
+    padding-left:10px;
+    padding-right:10px;
+}
+ 
+ .collateralList
+ {
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    overflow:auto;
+    right:0px;
+    left:0px;
+  }
+ 
+ .Ui-Tables
+ {
+     padding-top:11px;
+     padding-left:11px;
+     padding-right:11px;
+ }
+
+.ui-table th, th
+{
+    font-size:14px;
+}
+
+.QuoteFilterDiv
+{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+.QuoteFilterTables
+{
+    padding-left:11px;
+     padding-right:11px;
+}
+
+.Pagination a
+{
+    margin-top: 5px;
+}
+
+
+
+/* Style for Cache downloading
+-----------------------------------------------------------*/
+
+
+/*  */
+.autofill {
+    max-height: 150px;
+    overflow:auto; 
+}
+
+.popupItems
+{
+    max-height: 345px;
+    overflow: auto;
+    
+}
+
+/* Visual design version 2 */
+
+
+.InactiveMenu
+{
+    font:14px Normal, #ffffff;
+    }
+    
+    .LeftpanelSearchHeader
+    {
+        height:64px;
+        text-align:center;
+        vertical-align:middle;
+        font-size:14px;
+        border-bottom:1px solid #bbbbbb ;
+        }
+        
+        .LeftpanelHeaderfieldset
+        {
+            height:40px;           
+            }
+            
+            .LeftpanelHeaders
+            {
+                width:114px; 
+                border-radius:0;
+                }
+                
+              .leftrightpadding
+                {
+                    padding-left:10px;
+                 padding-right:10px;
+                 padding-bottom:12px;
+                 border-bottom:1px solid;
+                    }
+            
+            .labelPadding
+            {
+               padding-top:12px;
+               padding-bottom:6px;
+             }
+             
+             .Searchresetbtn
+             {
+                 padding-left:10px;
+                 padding-top:12px;
+                 }
+                 
+                 .borderradius
+                 { border-radius:0;
+                  }
+                  
+                  /* All font classes */
+                  
+                  .Headerfont
+                  {
+                      font-size:21px;
+                       /* top right bottom left*/
+                      }
+                      
+                      .Headerbtn
+                      {
+                          font:12px bold;
+                          }
+                          
+                          .Inputfont
+                          {
+                              
+                              font:14px, #969696;
+                              }
+                              
+    
+                                  .activeMenu
+                                  {
+                                   background:white;
+                                   color:#2e98d4;    
+                                      }
+.popupbackground
+{
+    background: #eeeeee;
+}
+
+.pagColBorder
+{
+    border-right:1px solid #CCCCCC;
+    border-bottom:1px solid #CCCCCC;
+}
+
+.pagColBorderLeft
+{
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+    border-bottom:1px solid #CCCCCC;
+}
+.labelQuoteDetails
+{
+    padding-top:12px;
+    padding-bottom:6px;
+    width:50px;
+}
+
+/*-------------------------------------------------------------Ipad potrait----------------------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+/*@media only screen and (max-device-width : 800px)and (orientation : portrait)*/
+{
+    
+   /* #navbar ul
+     {
+       padding-left:8%;
+       padding-right:8%;
+     }*/
+     
+     #navbar ul li
+         {
+             width:15%;
+         }
+     
+     #navbar ul > li:first-child
+     {
+         width:10%;
+     }
+     
+         
+
+    .portraitbutton
+    {
+       /* visibility: visible;*/
+        display:block;
+    }
+
+
+.ui-landscape-backbutton
+{
+    display:none;
+}
+
+.ui-landscape-backbutton-settings
+{
+   visibility:hidden;
+}
+   
+
+    .textColor
+    {
+        background: #EEEEEE;
+        color: #666666;
+    }
+   
+     .overlaymenu
+    {
+        z-index: 999;
+        visibility: visible;
+        float:left;
+        width: 33.3%;
+        border:1px solid #CCCCCC ;
+        background:#eeeeee;
+        -webkit-box-shadow: 1px 1px 2px rgba(129, 129, 129, 0.5);
+        -moz-box-shadow:    1px 1px 3px rgba(129, 129, 129, 0.5);
+        box-shadow:         1px 1px 3px rgba(129, 129, 129, 0.5);
+
+    }
+      .content-primary
+    {
+        width: 96%;
+       left:4%;
+    }
+    
+
+    
+    /* Border for Left Panel for both quotes and product screen */
+     #sContentDivQuotes, #sContentDiv
+    {
+        /*border-right: 1px solid #CCCCCC;
+        border-left: 1px solid #CCCCCC;*/
+       
+    }
+    /* Sets the height for the Search product catalog panel */
+    #searchProductDiv
+    {
+        max-height: 480px;
+       
+    }
+    
+  #searchSimple
+  {
+    /* border-right: 0px solid #CCCCCC;
+     border-left: 0px solid #CCCCCC; */
+    
+  }
+            
+    #primaryHeaderLeftDiv
+    {
+        display: inline;
+        float: left;
+        width: 40%;
+    }
+
+    #primaryHeaderCenterDiv
+    {
+        display: inline;
+        width: 30%;
+    }
+
+    
+    .content-secondary
+    {
+        width: 25%;
+        float: left;
+    }
+
+    #mainContainer
+    {
+        overflow: hidden;
+    }
+    /* #sContentDiv
+            {
+                height: 600px;
+                overflow: auto;
+            }
+        */
+    #headerTitle
+    {
+        display: inline-block;
+        width: 75%;
+        text-align: center;
+        font-size: 12px;
+        padding: 8px;
+        font-family:Arial;
+    }
+
+    body
+    {
+        background-color: #000;
+        font-size: 14px;
+        color: #fff;
+        font-family:Arial;
+       
+    }
+    .ui-collapsible-heading .ui-btn-inner
+    {
+        font-size: 14px;
+    }
+    .ui-collapsible-content .ui-input-text
+    {
+        font-size: 14px;
+    }
+    .ui-collapsible-content .ui-select .ui-btn-inner, .ui-collapsible-content .ui-select
+    {
+        font-size: 14px;
+    }
+
+    .quoteMenuItem
+    {
+        max-height: 475px;
+        overflow: auto;
+    }
+    
+    .quotePopupItem
+    {
+        max-height: 130px;
+        overflow: auto;
+    }
+    
+    .quoteUserPopupItem
+    {
+        height: 150px;
+        width:350px;
+        overflow: auto;
+    }
+    
+    /* Sets the height for the browse product catalog panel */
+    .productbrowse
+    {
+        height: 500px;
+          padding-left:10px;
+        padding-right:10px;
+    }
+
+    .productQuotebtn
+    {
+        position: relative;
+       /* top: 70%;*/
+    }
+     .quotePricingItem
+    {
+        max-height: 475px;
+        overflow: auto;
+    }
+
+}
+
+/*-----------------------------------------------------------ipad(Landscape)-------------------------------------------*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)
+/*@media only screen and (max-device-width : 768px) and (orientation : landscape)*/
+{
+    /* Border for Left Panel for product screen */
+    #sContentDiv, #sContentDivQuotes
+     {
+       /*height:100%;
+       border-right: 1px solid #CCCCCC;*/
+     }
+     /* Sets the height of the Search Product div for Search Product Panel*/
+      #searchProductDiv
+     {
+
+      height:auto;         
+
+     }
+     
+     .QuoteAdvancedPanel, .QuoteSimplePanel
+    {
+
+     /* height:494px;  */
+
+    }
+    
+    .overlaymenu
+{
+    border:1px solid #CCCCCC;
+    visibility: visible;
+    width: 25%;
+    float: left;
+    position:absolute;
+    /*overflow:auto;*/
+    background:#eeeeee;
+    bottom:12px;
+    top:104px;
+    -webkit-box-shadow: 1px 1px 2px rgba(129, 129, 129, 0.5);
+    -moz-box-shadow:    1px 1px 3px rgba(129, 129, 129, 0.5);
+    box-shadow:         1px 1px 3px rgba(129, 129, 129, 0.5);
+ }
+    
+    #searchSimple
+   {
+     /*height:100%;
+     border-right: 1px solid #CCCCCC;*/
+   }
+        
+     /* Sets the height for the browse product catalog panel */
+    .productbrowse
+    {
+      height: 534px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+        
+    .portraitbutton
+    {
+       /* visibility: hidden;*/
+       display:none;
+    }
+    
+    
+
+.ui-landscape-backbutton
+{
+    display:block;
+}
+
+.ui-landscape-backbutton-settings
+{
+   visibility:visible;
+}
+   
+
+    .textColor
+    {
+          background: #EEEEEE;
+    color: #333333;
+    }
+    .quoteMenuItem
+    {
+        max-height: 250px;
+        overflow: auto;
+    }
+    
+    .quotePopupItem
+    {
+        max-height: 130px;
+        overflow: auto;
+    }
+    
+    .quoteUserPopupItem
+    {
+        height: 150px;
+        width:350px;
+        overflow: auto;
+    }
+
+    /* Sets the height for the browse product catalog panel */
+    .productbrowse
+    {
+        height: 100%;
+          padding-left:10px;
+        padding-right:10px;
+    }
+
+
+    .productQuotebtn
+    {
+        position: relative;
+      /*  top: 60%;*/
+    }
+
+    #LineItemContentDiv {
+       max-height: 400px;
+       overflow:auto; 
+}
+
+}
+
+/*................................... samsung galaxy Note 800 [ 800px * 1280px]......................................*/
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) and (orientation : landscape)
+{
+    
+     /* Border for Left Panel for product screen */
+    #sContentDiv, #sContentDivQuotes
+     {
+       /*  height:100%;
+       border-right: 1px solid #CCCCCC;*/
+     }
+     /* Sets the height of the Search Product div for Search Product Panel*/
+     #searchProductDiv
+     {
+      height:auto;         
+     }
+     
+     .QuoteAdvancedPanel, .QuoteSimplePanel
+    {
+     /* height:460px;  */
+    }
+        
+    .portraitbutton
+    {
+       /* visibility: hidden;*/
+       display:none;
+    }
+    
+    
+
+.ui-landscape-backbutton
+{
+    display:block;
+}
+
+.ui-landscape-backbutton-settings
+{
+   visibility:visible;
+}
+    .textColor
+    {
+          background: #EEEEEE;
+    color: #333333;
+    }
+    .quoteMenuItem
+    {
+        max-height: 250px;
+        overflow: auto;
+    }
+    
+    .quotePopupItem
+    {
+        max-height: 130px;
+        overflow: auto;
+    }
+    
+    .quoteUserPopupItem
+    {
+        height: 150px;
+        width:350px;
+        overflow: auto;
+    }
+    
+    /* Sets the height for the browse product catalog panel */
+    .productbrowse
+    {
+        height: 100%;
+          padding-left:10px;
+        padding-right:10px;
+    }
+
+    .productQuotebtn
+    {
+        position: relative;
+      /*  top: 60%;*/
+    }
+
+    #LineItemContentDiv {
+       max-height: 400px;
+       overflow:auto; 
+    }
+    
+    }
+                            
+/*--------------------------------------------------------------  7" Tab(portrait mode)--------------------------------------------------*/
+
+@media only screen and (min-width: 500px ) and (max-width:760px )
+{
+   /* #navbar ul
+     {
+       padding-left:8%;
+       padding-right:8%;
+     }*/
+     
+     #navbar ul li
+         {
+             width:15%;
+         }
+     
+     #navbar ul > li:first-child
+     {
+         width:10%;
+     }
+     
+     
+     
+
+    
+    .portraitbutton
+    {
+        /*visibility: visible;*/
+        display:block;
+        text-align: center;
+    }
+    
+   
+
+.ui-landscape-backbutton
+{
+    display:none;
+}
+
+.ui-landscape-backbutton-settings
+{
+   visibility:hidden;
+}
+  
+     /* Border for Left Panel for both quotes and product screen */
+     #sContentDivQuotes, #sContentDiv
+    {
+       /*border-right: 1px solid #CCCCCC;
+       border-left: 1px solid #CCCCCC;*/
+       
+    }
+    /* Sets the height for the Search product catalog panel */
+    #searchProductDiv
+    {
+        height: 275px;      
+    }
+ 
+    #searchSimple
+    {
+     /* border-right: 0px solid #CCCCCC;
+     border-left: 0px solid #CCCCCC; */
+    }
+       
+    .textColor
+    {
+        background: #EEEEEE;
+        color: #666666;
+    }
+    
+     .overlaymenu
+    {
+        z-index: 999;
+        visibility: visible;
+       float:left;
+        width: 40%;
+        border:1px solid #CCCCCC ;
+        -webkit-box-shadow: 1px 1px 2px rgba(129, 129, 129, 0.5);
+        -moz-box-shadow:    1px 1px 3px rgba(129, 129, 129, 0.5);
+        box-shadow:         1px 1px 3px rgba(129, 129, 129, 0.5);
+
+    }
+      .content-primary
+    {
+        width: 96%;
+       left:4%;
+    }
+
+    /*.content-primary
+    {
+        width: 100%;
+        float: right;
+    }*/
+    .content-secondary
+    {
+        width: 32%;
+        float: left;
+    }
+
+    #mainContainer
+    {
+        overflow: hidden;
+    }
+    #headerTitle
+    {
+        display: inline-block;
+        width: 60%;
+        text-align: center;
+        font-size: 12px;
+        padding: 8px;
+        font-family:Arial;
+    }
+
+    body
+    {
+        background-color: #000;
+        font-size: 11px;
+        color: #fff;
+        font-family: Arial;
+    }
+
+
+    .ui-collapsible-heading .ui-btn-inner
+    {
+        font-size: 11px;
+    }
+    .ui-collapsible-content .ui-input-text
+    {
+        font-size: 11px;
+    }
+    .ui-collapsible-content .ui-btn-text
+    {
+        font-size: 11px;
+    }
+    .ui-collapsible-content .ui-select .ui-btn-inner, .ui-collapsible-content .ui-select
+    {
+        font-size: 11px;
+    }
+    .ui-collapsible-set .ui-grid-a .ui-btn-inner
+    {
+        font-size: 11px;
+    }
+    .ui-header .ui-block-c .ui-btn-icon-left .ui-btn-inner, .ui-header .ui-block-a .ui-btn-icon-left .ui-btn-inner
+    {
+        padding-left: 22px;
+    }
+    .ui-header .ui-block-c .ui-btn-inline, .ui-header .ui-block-a .ui-btn-inline
+    {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .ui-header .ui-btn-inner
+    {
+        padding: 3px;
+    }
+    .ui-header .ui-btn-inner .ui-btn-text
+    {
+        font-size: 11px;
+    }
+
+    #primaryHeaderLeftDiv
+    {
+        display: inline;
+        float: left;
+        width: 50%;
+    }
+    #primaryHeaderCenterDiv
+    {
+        display: inline;
+        width: 25%;
+    }
+
+    .quoteMenuItem
+    {
+        max-height: 450px;
+        overflow: auto;
+    }
+    
+    .quotePopupItem
+    {
+        max-height: 130px;
+        overflow: auto;
+    }
+    
+    .quoteUserPopupItem
+    {
+        height: 150px;
+        width:350px;
+        overflow: auto;
+    }
+    
+    
+    /* Sets the height for the browse product catalog panel */
+    .productbrowse
+    {
+        height: 600px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .productQuotebtn
+    {
+        position: relative;
+       /* top: 60%;*/
+    }
+
+
+}
+
+/*---------------------------------------- 7 inch Tab (landscape) ----------------------------------------------*/
+/*@media screen and (device-pixel-ratio: 1.5) and (device-width: 767px) and (orientation: landscape)*/
+/*@media screen and (min-width:678px) and (max-width: 1024px) and (orientation: landscape)*/
+@media screen and (device-width:1024px)and (orientation: landscape)
+{
+
+    .portraitbutton
+    {
+      /*  visibility: hidden;*/
+      display:none;
+    }
+    
+   
+    
+    .ui-landscape-backbutton
+{
+    display:block;
+}
+
+.ui-landscape-backbutton-settings
+{
+   visibility:visible;
+}
+   
+    .productQuotebtn
+    {
+        position: relative;
+      /*  top: 60%;*/
+    }
+
+
+    .content-primary
+    {
+        width: 75%;
+        float: right;
+    }
+    .content-secondary
+    {
+        width: 32%;
+        float: left;
+    }
+
+
+
+    #mainContainer
+    {
+        overflow: hidden;
+    }
+    #headerTitle
+    {
+        display: inline-block;
+        width: 60%;
+        text-align: center;
+        font-size: 12px;
+        padding: 8px;
+        font-family:Arial;
+    }
+
+    body
+    {
+        background-color: #000;
+        font: 11px;
+        color: #fff;
+        font-family:Arial;
+    }
+
+
+    .ui-collapsible-heading .ui-btn-inner
+    {
+        font-size: 11px;
+    }
+    .ui-collapsible-content .ui-input-text
+    {
+        font-size: 11px;
+    }
+    .ui-collapsible-content .ui-btn-text
+    {
+        font-size: 11px;
+    }
+    .ui-collapsible-content .ui-select .ui-btn-inner, .ui-collapsible-content .ui-select
+    {
+        font-size: 11px;
+    }
+    .ui-collapsible-set .ui-grid-a .ui-btn-inner
+    {
+        font-size: 11px;
+    }
+    .ui-header .ui-block-c .ui-btn-icon-left .ui-btn-inner, .ui-header .ui-block-a .ui-btn-icon-left .ui-btn-inner
+    {
+        padding-left: 22px;
+    }
+    .ui-header .ui-block-c .ui-btn-inline, .ui-header .ui-block-a .ui-btn-inline
+    {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .ui-header .ui-btn-inner
+    {
+        padding: 3px;
+    }
+    .ui-header .ui-btn-inner .ui-btn-text
+    {
+        font-size: 11px;
+    }
+
+    #primaryHeaderLeftDiv
+    {
+        display: inline;
+        float: left;
+        width: 50%;
+    }
+    #primaryHeaderCenterDiv
+    {
+        display: inline;
+        width: 25%;
+    }
+
+    .quoteMenuItem
+    {
+        max-height: 75px;
+        overflow: auto;
+    }
+    
+    .quotePopupItem
+    {
+        max-height: 130px;
+        overflow: auto;
+    }
+    
+    .quoteUserPopupItem
+    {
+        height: 150px;
+        width:350px;
+        overflow: auto;
+    }
+    
+    /* Sets the height for the browse product catalog panel */
+    .productbrowse
+    {
+        height: 200px;
+          padding-left:10px;
+        padding-right:10px;
+    }
+
+    .productQuotebtn
+    {
+        position: relative;
+        /*top: 60%;*/
+    }
+
+
+   /* 7 Inch tab Div table height fixing */
+    #LineItemContentDiv {
+       max-height: 185px;
+       overflow:auto; 
+    }
+ 
+    #pContentDiv
+    {
+        max-height: 230px;
+        overflow:auto; 
+    }
+    
+    #pContentDivQuotes
+    {
+        /* max-height: 220px;
+        overflow:auto; */
+    }
+    
+    /* Quotes Simple and Advanced left panels */
+    #searchSimple
+    {
+        max-height:250px;
+        overflow:auto;
+    }
+    
+    /* Border for Left Panel for product screen */
+    #sContentDiv
+    {
+       /*border-right: 1px solid #CCCCCC;*/
+    }
+    /* Sets the height for the Search Products Panel */
+    #searchProductDiv
+    {
+        height: 275px;      
+    }
+    .QuoteAdvancedPanel, .QuoteSimplePanel
+    {
+     height:275px;  
+    }
+    
+   #DivSidepanelBody
+   {
+       /*max-height:300px;*/
+       overflow:auto;
+   }
+
+}
+                             
+/* Quote Detials , LineItems, Customer Products Overflow CSS - START */
+#QdetailsDiv
+{
+  position: absolute;
+  top: 0px;
+  bottom: 12px;
+ left: 0;
+ overflow: auto;
+ right: 0;  
+}
+
+#divSiemensProducts, #divCustomerProducts,#divQuoteDetails
+{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0;
+  right: 0;  
+}
+
+#divQuoteDetailsAccordion
+{
+  position: absolute;
+  padding-top: 100px;
+  bottom: 0px;
+  left: 0;
+  right: 0;  
+}
+
+/* Quote Detials , LineItems, Customer Products Overflow CSS -= END */
+
+                           /* two fold border */
+                           
+                           .border-left
+                           {
+                            border-right: #eeeeee solid 1px;
+   
+                               }
+                               .border-right
+                               { border-left: #bbbbbb solid 1px;
+                                      
+                                   }
+
+
+/*  ****************Yogesh - CSS Changes**************   */
+ #headerBar 
+   {
+		position:relative;
+		/*left:0px;
+		top:0px;
+		height:34px;
+		right:0px;*/
+	}
+ 
+	
+	.fastclick
+	{
+	    }
+
+
+
+/*-- Trial-- */
+
+/*.anchorSample {
+        width: 100px;
+        height: 30px;
+        background: #950006;
+        background: -moz-linear-gradient(top, #de0009 0%, #950006 100%);
+        background: -o-linear-gradient(top, #de0009 0%, #950006 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #de0009), color-stop(100%, #950006));
+        background: -webkit-linear-gradient(top, #de0009 0%, #950006 100%);
+        background: linear-gradient(top, #de0009 0%, #950006 100%);
+        border: solid #dd0009;
+        border-width: 1px 1px 1px 0;
+        -moz-border-radius: 0 5px 5px 0;
+        -webkit-border-radius: 0 5px 5px 0;
+        border-radius: 0 5px 5px 0;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 14px;
+        margin-right: 2px;
+        padding: 0 10px 0 10px;
+        position: relative;
+        text-decoration: none;
+}*/
+
+.anchorSample {
+
+        width: 15%;
+        height: 30px;
+        background: #eeeeee;
+        background: #950006;
+        background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+        background: -o-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #eeeeee));
+        background: -webkit-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+        background: linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+       /* border: solid black;
+        border-width: 1px 0 1px 0;*/
+        -moz-border-radius: 0 5px 5px 0;
+        -webkit-border-radius: 0 5px 5px 0;
+        border-radius: 0 5px 5px 0;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 0px;
+        margin-right: 2px;
+        padding: 0 10px 0 10px;
+        position: relative;
+        text-decoration: none;
+}
+.anchorSample:after {
+        background: #950006;
+        background: -moz-linear-gradient(-45deg, #eeeeee 0%, #eeeeee 100%);
+        background: -o-linear-gradient(-45deg, #eeeeee 0%, #eeeeee100%);
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #eeeeee), color-stop(100%, #eeeeee));
+        background: -webkit-linear-gradient(-45deg, #eeeeee 0%, #eeeeee 100%);
+        background: linear-gradient(-45deg, #eeeeee 0%, #eeeeee 100%);
+        border: solid black;
+        border-width: 1px 1px 0 0;
+        border-radius: 2px 0 0 0;
+        content: '';
+        display: block;
+        height: 28px;
+        right: -1px;
+        position: absolute;
+        top: 5px;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        width: 28px;
+}
+
+
+
+.spanNew {
+    color: black;
+    font-weight: normal;
+    position: relative;
+    left:20px;
+}
+/* JQtree related classes - Common for all screens */
+ul.jqtree-tree {
+    margin-left: 0px;
+}
+
+ul.jqtree-tree,
+ul.jqtree-tree ul.jqtree_common {
+    list-style: none outside;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+ul.jqtree-tree ul.jqtree_common {
+    display: block;
+    margin-left: 12px;
+    margin-right: 0;
+    margin-top:-1px; /* this has been added to give the jquery mobile list item look - modify for tree drawing*/
+}
+ul.jqtree-tree li.jqtree-closed > ul.jqtree_common {
+    display: none;
+}
+
+ul.jqtree-tree li.jqtree_common {
+    clear: both;
+    list-style-type: none;
+    margin-top:-1px; /* this has been added to give the jquery mobile list item look - modify for tree drawing*/
+}
+ul.jqtree-tree .jqtree-toggler {
+    display: block;
+    position: absolute;
+    /* left: -1.5em; */
+    top: 0%;
+    top: 0;  /* fix for ie7 */
+    font-size: 30px;
+    line-height: 12px;
+    font-family: arial;  /* fix for ie9 */
+    border-bottom: none;
+    color: #333;
+    opacity:0;
+    width:20%;
+    height:97%;
+    left:0px;
+}
+
+ul.jqtree-tree .jqtree-toggler:hover {
+    color: #000;
+}
+
+ul.jqtree-tree .jqtree-element {
+    cursor: pointer;
+}
+
+ul.jqtree-tree .jqtree-title {
+    color: #656565;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+ul.jqtree-tree li.jqtree-folder {
+    margin-bottom: 0px;
+    margin-top:-1px; /* this has been added to give the jquery mobile list item look - remove for tree based drawing */
+}
+
+ul.jqtree-tree li.jqtree-folder.jqtree-closed {
+    margin-bottom: 0px;
+}
+
+ul.jqtree-tree li.jqtree-folder .jqtree-title {
+    margin-left: 5px;
+}
+
+ul.jqtree-tree .jqtree-toggler.jqtree-closed {
+    background-position: 0 0;
+}
+
+span.jqtree-dragging {
+    color: #fff;
+    background: #000;
+    opacity: 0.6;
+    cursor: pointer;
+    padding: 2px 8px;
+}
+
+ul.jqtree-tree li.jqtree-ghost {
+    position: relative;
+    z-index: 10;
+    margin-right: 10px;
+}
+
+ul.jqtree-tree li.jqtree-ghost span {
+    display: block;
+}
+
+ul.jqtree-tree li.jqtree-ghost span.jqtree-circle {
+    background-image: url(Images/jqtree-circle.png);
+    background-repeat: no-repeat;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: -4px;
+    left: 2px;
+}
+
+ul.jqtree-tree li.jqtree-ghost span.jqtree-line {
+    background-color: #0000ff;
+    height: 2px;
+    padding: 0;
+    position: absolute;
+    top: -1px;
+    left: 10px;
+    width: 100%;
+}
+
+ul.jqtree-tree li.jqtree-ghost.jqtree-inside {
+    margin-left: 48px;
+}
+
+ul.jqtree-tree span.jqtree-border {
+    position: absolute;
+    display: block;
+    left: -2px;
+    top: 0;
+    border: solid 2px #0000ff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+ul.jqtree-tree .jqtree-element {
+    width: 100%; /* todo: why is this in here? */
+    width: auto; /* ie7 fix; issue 41 */
+    position: relative;
+    display: block;
+    height: 34px;
+    margin: 0px 0;
+    padding: 7px 10px;
+    color: #656565;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #CCC;
+    background: #EEE;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white /*{a-bup-background-start}*/), to(#EEE /*{a-bup-background-end}*/));
+    background-image: -webkit-linear-gradient( white /*{a-bup-background-start}*/, #EEE /*{a-bup-background-end}*/);
+    background-image: -moz-linear-gradient( white /*{a-bup-background-start}*/, #EEE /*{a-bup-background-end}*/);
+    background-image: -ms-linear-gradient( white /*{a-bup-background-start}*/, #EEE /*{a-bup-background-end}*/);
+    background-image: -o-linear-gradient( white /*{a-bup-background-start}*/, #EEE /*{a-bup-background-end}*/);
+    background-image: linear-gradient( white /*{a-bup-background-start}*/, #EEE /*{a-bup-background-end}*/);
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+ul.jqtree-tree li.jqtree-selected > .jqtree-element,
+ul.jqtree-tree li.jqtree-selected > .jqtree-element:hover {
+    background-color: #EEE;
+   background: -moz-radial-gradient(center, ellipse cover, #EEE 21%, #CCC 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(21%,#EEE), color-stop(100%,#CCC));
+    background: -webkit-radial-gradient(center, ellipse cover, #EEE 21%,#CCC 100%);
+    background: -o-radial-gradient(center, ellipse cover, #EEE 21%,#CCC 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #EEE 21%,#CCC 100%);
+    background: radial-gradient(ellipse at center, #EEE 21%,#CCC 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );
+    box-shadow: inset 0 2px 8px #656565;
+    -moz-box-shadow: inset 0 2px 8px #656565;
+    -webkit-box-shadow: inset 0 2px 8px #656565;
+}
+
+ul.jqtree-tree .jqtree-moving > .jqtree-element .jqtree-title {
+    outline: dashed 1px #0000ff;
+}
+
+.tree-handle
+{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 10px;
+    height:32px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #CCC;
+    background: #EEE;
+    background: -webkit-linear-gradient(top, #CC0000 0%, #CC0000 100%);
+    background: -moz-linear-gradient(top, #CC0000 0%, #CC0000 100%);
+    background: linear-gradient(top, #CC0000 0%, #CC0000 100%);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tree-handleR
+{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 10px;
+    height:32px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #CCC;
+    background: #EEE;
+    background: -webkit-linear-gradient(top, red 0%, red 100%);
+    background: -moz-linear-gradient(top, red 0%, red 100%);
+    background: linear-gradient(top, red 0%, red 100%);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tree-handleG
+{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 10px;
+    height:32px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #CCC;
+    background: #EEE;
+    background: -webkit-linear-gradient(top, #46AF5A 0%, #46AF5A 100%);
+    background: -moz-linear-gradient(top, #46AF5A 0%, #46AF5A 100%);
+    background: linear-gradient(top, #46AF5A 0%, #46AF5A 100%);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.tree-handleY
+{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 10px;
+    height:32px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #CCC;
+    background: #EEE;
+    background: -webkit-linear-gradient(top, #FFCC00 0%, #FFCC00 100%);
+    background: -moz-linear-gradient(top, #FFCC00 0%, #FFCC00 100%);
+    background: linear-gradient(top, #FFCC00 0%, #FFCC00 100%);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+    #confToolBar .toolBoxBtn
+    {
+       padding:4px;
+       margin:8px auto;
+    }
+
+#gHeaderOptions .ui-radio label, #confMenu .ui-radio label
+{
+    width:100%;
+}
+
+#gHeaderOptions .ui-radio
+{
+    width:20%;
+    margin-right:0px;
+}
+
+#gHeaderOptions .ui-controlgroup-controls
+{
+    width:100%;
+}
+
+#gHeaderOptions .ui-controlgroup-horizontal, #gHeaderOptions .ui-controlgroup-label
+{
+    margin:0px;
+    background:-webkit-linear-gradient( white /*{a-bup-background-start}*/, #EEE /*{a-bup-background-end}*/);
+    border-right: 1px solid #CCC;
+}
+
+#confMenu .ui-controlgroup-controls
+{
+    width:90%;
+}
+
+#confMenu .ui-radio
+{
+    width:50%;
+}
+#MJ_SoldToAccount
+{
+    position: absolute;
+    overflow: auto;
+    left: 550px;
+    right: 10px;
+    top: 60px;
+    max-height:300px;
+}
+#sContentDivConf
+{
+    border-top: none;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 64px;
+    top: 45px;
+    overflow: auto;
+}
+
+#confTab
+{
+    border-bottom: none;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+

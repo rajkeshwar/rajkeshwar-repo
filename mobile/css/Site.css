@@ -1,0 +1,846 @@
+/* Override Jquery Mobile styles */
+
+#RightContainer .ui-table
+{
+    border: 0;
+    padding: 0;
+    width: 100%;
+    background: #FFFFFF;
+    border-top: 1px solid #CCCCCC; /* -webkit-border-radius: 15px; */
+    -moz-border-radius: 15px;
+    border-collapse: collapse;
+}
+
+#RightContainer .ui-table thead tr
+{
+    border-top: 2px solid #d6d6d6; /* non-RGBA fallback */
+    border-top: 2px solid rgba(0, 0, 0, .1);
+}
+.ui-table tr
+{
+    height: 44px;
+}
+#RightContainer .ui-table th
+{
+    vertical-align: middle;
+    text-align: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+#RightContainer .ui-table td
+{
+    font-weight: normal;
+    font-size: 12px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+ui-table th, .ui-table td
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Add strokes between each row */
+#RightContainer .table-stroke thead th, .table-stroke tbody td
+{
+    border-bottom: 1px solid #d6d6d6; /* non-RGBA fallback */
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid #d6d6d6;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    color: #656565;
+}
+#ManageJobfieldset .ui-btn
+{
+    padding: 0;
+}
+
+#ManageJobfieldset .ui-btn-active
+{
+    font-weight: normal;
+    background-color: #A5A5A5 /*{a-active-background-color}*/;
+    border-color: #A5A5A5 /*{a-active-border}*/;
+    color: #fff /*{a-active-color}*/;
+    text-shadow: none;
+}
+
+#ManageJobfieldset .ui-controlgroup, #ManageJobfieldset .fieldset.ui-controlgroup
+{
+    margin: 0;
+}
+
+#ManageJobBodyFooter .ui-btn
+{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#tdView .ui-btn
+{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#SPPager .ui-btn
+{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#ManageJobBodyFooter .ui-btn-icon-left:after, #RightContainer .ui-btn-icon-right:after, #ManageJobBodyFooter .ui-btn-icon-top:after, #ManageJobBodyFooter .ui-btn-icon-bottom:after, #ManageJobBodyFooter .ui-btn-icon-notext:after
+{
+    width: 16px;
+    height: 16px;
+}
+
+#ManageJobBodyFooter .ui-btn-icon-left:after, #ManageJobBodyFooter .ui-btn-icon-right:after, #ManageJobBodyFooter .ui-btn-icon-notext:after
+{
+    background-color: rgba(154, 205, 50, 0);
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-position: inherit;
+    left: .5em;
+    width: 16px;
+    height: 16px;
+}
+
+
+#SPPager .ui-btn-icon-left:after, #SPPager .ui-btn-icon-right:after, #SPPager .ui-btn-icon-notext:after
+{
+    background-color: rgba(154, 205, 50, 0);
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-position: inherit;
+    left: .5em;
+    width: 16px;
+    height: 16px;
+}
+
+#tdView .ui-btn-icon-left:after, #tdView .ui-btn-icon-right:after, #tdView .ui-btn-icon-notext:after
+{
+    background-color: rgba(154, 205, 50, 0);
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-position: inherit;
+    left: 2em;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+/*End Of Override Jquery Mobile styles */
+
+/* Login Related Style*/
+
+#logonBox
+{
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -129px;
+    background: #eeeeee;
+    border: 1px solid #CCCCCC;
+    -moz-box-shadow: 1px 1px 3px rgba(129, 129, 129, 0.5);
+    -webkit-box-shadow: 1px 1px 3px rgba(129, 129, 129, 0.5);
+    box-shadow: 1px 1px 3px rgba(129, 129, 129, 0.5);
+}
+
+#layoutForLoginDiv
+{
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    top: 46px;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+}
+#layoutForLoginTitle
+{
+    width: 116px;
+    margin-left: 10px;
+}
+#headerBar
+{
+    position: relative;
+    height: 40px;
+}
+#headerBar div
+{
+    height: 42px;
+}
+
+.icon
+{
+    display: inline-block;
+    height: 16px;
+    background-image: url(../Content/Images/asset32x32.png);
+    background-size: 116px 499px;
+    background-repeat: no-repeat;
+}
+.header_title
+{
+    background-position: 0 -420px;
+    width: 116px;
+    height: 16px;
+}
+
+/*End Of Login Related Style*/
+
+/* Layout Related Style*/
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+ul#menu
+{
+    position: absolute;
+    bottom: 72px;
+    top: 0;
+    width: 100%;
+}
+ul#user
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+ul#menu li
+{
+    border-bottom: 1px solid grey;
+    height: 72px;
+}
+
+ul#user li
+{
+    border-top: 1px solid grey;
+    height: 100%;
+}
+
+
+
+.Highlight
+{
+    background: #A5A5A5;
+}
+
+.ProductCatalog
+{
+    background-position: 0 0;
+    display: inline-block;
+    height: 1em;
+    background-image: url("../Content/Images/asset32x32.png");
+    background-repeat: no-repeat;
+}
+.QuoteSearch
+{
+    background-position: 0 -880px;
+    display: inline-block;
+    height: 1em;
+    background-image: url('../Content/Images/asset32x32.png');
+    background-repeat: no-repeat;
+}
+.ManageJobs
+{
+    background-position: 0 -128px;
+    display: inline-block;
+    height: 1em;
+    background-image: url('../Content/Images/asset32x32.png');
+    background-repeat: no-repeat;
+}
+.DataConfig
+{
+    background-position: 0 -295px;
+    display: inline-block;
+    height: 1em;
+    background-image: url('../Content/Images/asset32x32.png');
+    background-repeat: no-repeat;
+}
+.LoggedInUser
+{
+    background-position: 0 -160px;
+    display: inline-block;
+    height: 1em;
+    background-image: url('../Content/Images/asset32x32.png');
+    background-repeat: no-repeat;
+}
+.AddIcon
+{
+    background-position: 0 0;
+    display: inline-block;
+    height: 1em;
+    background-image: url('../Content/Images/icons-18-black.png');
+    background-repeat: no-repeat;
+}
+
+
+.ui-icon-configure:after
+{
+    background-position: 0 0;
+    display: inline-block;
+    height: 1em;
+    background-image: url("../Content/Images/asset16x16.png");
+    background-repeat: no-repeat;
+}
+
+.ui-icon-button_prev:after
+{
+    background-position: 0 -234px;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url("../Content/Images/asset16x16.png");
+    background-repeat: no-repeat;
+}
+
+.ui-icon-button_next :after
+{
+    background-position: 0 -235px;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url("../Content/Images/asset16x16.png");
+    background-repeat: no-repeat;
+}
+
+.circle
+{
+    float: left;
+    width: 40px;
+    height: 40px; /* background: red; */
+    border-radius: 50%;
+    border: 4px solid #A5A5A5;
+}
+
+
+
+.Incircle
+{
+    float: left;
+    width: 40px;
+    height: 40px; /* background: red; */
+    border-radius: 50%;
+    border: 4px solid #D8CDCD;
+}
+
+
+
+/* width and height can be anything, as long as they're equal */
+
+/*End Of Layout Related Style*/
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                            Qselect styles
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#AddConfigProdHeader
+{
+    width: 99.7%;
+    background: white;
+    margin-top: 0.625em;
+    border-top-left-radius: 0.750em;
+    border-top-right-radius: 0.813em;
+    margin-left: 0.125em;
+    margin-right: 0.313em;
+}
+
+
+
+
+#navigator
+{
+    width: 100%;
+    padding: 0;
+    height: 0.625em; /*10px*/
+    z-index: 999;
+}
+#navigator a
+{
+    display: inline-block;
+    width: 0.625em; /*10px*/
+    height: 0.625em; /*10px*/
+    text-indent: -999em;
+    background: #fff;
+    border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+    -webkit-border-radius: 0.625em;
+    box-shadow: 0 0 1px 1px #707173;
+    margin-right: 0.938em; /*15px*/
+}
+#navigator a
+{
+    background: rgb(160, 157, 157);
+}
+#navigator a.activePage
+{
+    background: rgb(252, 248, 248);
+}
+#headerLabel, #headerCancelLabel
+{
+    font-size: 1.250em; /*20px*/
+    font-family: Arial;
+    margin: 0.500em;
+    color: rgb(129, 129, 129);
+}
+
+
+/*#qSelectDataContainer .ui-listview, #qSelectDataContainer .ui-listview > li
+{
+    margin: 0.625em;
+    border-radius: 1.500em;
+}*/
+
+/*#qSelectDataContainer .ui-listview li
+{
+    margin: 0.625em;
+    border-radius: 1.500em;
+}*/
+
+#qSelectDataContainer .ui-listview > li.ui-first-child > a.ui-btn, #qSelectDataContainer .ui-listview > li.ui-last-child > a.ui-btn, #qSelectDataContainer .ui-listview > li.ui-first-child, #qSelectDataContainer .ui-listview > li.ui-last-child
+{
+    border-radius: 1.500em;
+}
+
+
+
+#qSelectDataContainer .ui-listview
+{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#qSelectDataContainer .ui-listview li a
+{
+    /*  margin:0.625em;*/ /*10px*/
+    border-radius: 1.500em;
+    font-size: 0.875em;
+    font-weight: normal;
+    padding-left: 0.938em;
+}
+
+.quickConfigSplitButton
+{
+    border-bottom-right-radius: 1.500em;
+    border-top-right-radius: 1.500em;
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+}
+
+
+#qSelectDataContainer .ui-listview > li > a.ui-btn
+{
+    border-bottom-width: 1px;
+}
+
+.columns
+{
+    -moz-columns: 4 18.750em; /* 300px*/
+    -webkit-columns: 4 280px;
+    columns: 4 18.750em;
+}
+
+#qSelectDataContainer li
+{
+    -webkit-column-break-inside: avoid; /* -webkit-break-inside: avoid-column;*/
+    column-break-inside: avoid;
+    display: inline-block;
+    margin-bottom: 0.750em; /*12px*/
+    width: 280px;
+    height: 2.750em; /*44px*/
+}
+
+/*  .groupLabel
+  {
+     width:18.750em;
+    
+     background: #FBFBFB;
+     height:2.750em; 
+     margin-top:0.625em;
+     margin-bottom:0px
+  }*/
+
+.groupLabelAnchor
+{
+    background: #FBFBFB;
+    border: 0px;
+}
+
+.QuickConfigColumns
+{
+    -moz-columns: 2 100px; /* 300px*/
+    -webkit-columns: 2 100px;
+    columns: 2 100px;
+}
+
+.QuickConfigColumns div
+{
+    -webkit-column-break-inside: avoid; /*display:inline-block;*/
+}
+
+#qConfigPopUpContent .ui-controlgroup-horizontal .ui-controlgroup-controls
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#qConfigPopUpContent .ui-controlgroup-horizontal .ui-controlgroup-controls .ui-radio
+{
+    float: left;
+    clear: none;
+    width: 50%;
+}
+
+#qConfigPopUpContent .ui-radio .ui-btn.ui-radio-on:after
+{
+    background-image: none;
+    background-color: rgb(88, 88, 88);
+    width: 8px;
+    height: 8px;
+    border-width: 5px;
+    border-style: Double;
+    border-color: rgb(252, 252, 252);
+    margin: -9px 2px 0 0;
+}
+
+
+ #qConfigPopUpContent .ui-btn.ui-radio-off:after {
+filter: Alpha(Opacity=30);
+ opacity: .5; 
+background-color: white;
+border-color: black;
+border-style: solid;
+border-width: 1px;
+width: 10px;
+height: 10px;
+
+}
+
+/* #qConfigPopUpContent .ui-controlgroup-horizontal .ui-radio .ui-btn:after {
+content: "";
+display: block !important;
+}*/
+
+
+
+#qConfigPopUpContent .ui-btn-active
+{
+    font-weight: normal;
+    background-color: #A5A5A5 /*{a-active-background-color}*/;
+    border-color: #A5A5A5 /*{a-active-border}*/;
+    color: #fff /*{a-active-color}*/;
+    text-shadow: none;
+}
+
+#qConfigPopUpContent .ui-page-theme-a .ui-radio-on:after, #qConfigPopUpContent .ui-btn.ui-radio-on.ui-btn-a:after
+{
+    border-color: rgb(252, 252, 252);
+}
+
+#qConfigPopUpContent label.ui-btn
+{
+    font-weight: normal;
+    font-size: 14px;
+    border-width: 1px;
+    border-style: solid;
+    height: 42px;
+    padding-left: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 41px;
+}
+
+#qConfigPopUpContent .ui-radio input
+{
+    position: absolute;
+    left: .466em;
+    top: 50%;
+    width: 32px;
+    height: 22px;
+    margin: -11px 0 0 0;
+    outline: 0 !important;
+    z-index: 1;
+}
+#qConfigPopUpContent [data-type="horizontal"] .ui-radio input
+{
+    z-index: 3;
+}
+
+#qConfigPopUpContent .ui-controlgroup-controls .ui-radio
+{
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+    height: 44px;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                        DC Styles
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#dConfigHeader
+{
+    width: 99.7%;
+    background: white;
+}
+
+#dConfigHeader label
+{
+    font-size: 1.250em; /*20px*/
+    font-family: Arial;
+    margin: 0.625em;
+    color: rgb(129, 129, 129);
+}
+
+#dcFooterContentDiv
+{
+    overflow: auto; /*   margin-left: 30%;*/
+}
+
+.footerLabel
+{
+    color: #656565;
+    font-family: arial;
+    clear: left;
+    margin-bottom: 0px;
+    width: 100px;
+    text-align: center;
+}
+
+.selectedFooterLabel
+{
+    color: White;
+    font-family: arial;
+    clear: left;
+    margin-bottom: 0px;
+    width: 90px;
+    text-align: center;
+    background: #B4B3B3;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+.inclompletePageStatus
+{
+    border: 3px solid yellow;
+}
+
+.completePageStatus
+{
+    border: 3px solid green;
+}
+
+.footerConnector
+{
+    width: 80px;
+    height: 10px;
+    background: #CFCECE;
+    float: right;
+    margin-top: 15px;
+}
+
+#dcFooterWrapper div .circle
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #A5A5A5;
+}
+
+#dcFooterContinueBtnDiv .ui-btn-icon-right:after, #dcFooterContinueBtnDiv .ui-btn-icon-notext:after
+{
+    width: 22px;
+    height: 22px;
+}
+
+#dcFooterContinueBtnDiv
+{
+    width: 15%;
+    margin-top: 15px;
+}
+
+#dcFooterPreviousBtnDiv
+{
+    width: 10%;
+    margin-top: 15px;
+}
+
+#dcFooterContentDiv
+{
+    width: 80%;
+    margin-top: 5px;
+}
+
+/*#DConfigPanel input[type=text],
+#DConfigPanel input[type=text]:hover,
+#DConfigPanel input[type=text]:focus,
+#DConfigPanel input[type=text]:active
+{
+    border: 0;
+    outline: none;
+    outline-offset: 0;
+}*/
+
+#DConfigPanel .ui-input-text
+{
+   
+    border-color: transparent !important;
+    
+}
+
+#DConfigPanel .ui-btn.ui-checkbox-off:after
+{
+    background:white;
+    border-radius:0px;
+    border:1px solid black;
+}
+
+#DConfigPanel .ui-btn.ui-checkbox-on:after
+{
+    background-color: #A4A4A5 !important;
+    border-radius:0px;
+   
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                            Media Queries
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Media Query for 7inch portrait*/
+@media only screen and (max-width:760px) and (orientation : portrait)
+{
+    .columns
+    {
+        -moz-columns: 3 17.188em; /*275px*/ /* 15.625em 250px*/
+        -webkit-columns: 2 250px;
+        columns: 3 17.188em;
+    }
+
+    #qSelectDataContainer li
+    {
+        -webkit-column-break-inside: avoid;
+        width: 250px; /* Width:275px*/
+        height: 2.750em; /*44px*/ /*  -webkit-break-inside: avoid-column;*/
+        display: inline-block;
+    }
+
+
+    #dcFooterContentDiv
+    {
+        overflow: auto; /* margin-left: 10%;*/
+    }
+
+    #dcFooterPreviousBtnDiv
+    {
+        width: 15%;
+    }
+
+    #dcFooterContinueBtnDiv
+    {
+        width: 20%;
+    }
+
+    #dcFooterContentDiv
+    {
+        width: 80%;
+    }
+
+    #dcFooterWrapper div .circle
+    {
+        float: left;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px solid #A5A5A5;
+    }
+    .footerConnector
+    {
+        width: 40px;
+        height: 10px;
+        background: #CFCECE; /*background:red;*/
+        float: right;
+        margin-top: 15px;
+    }
+
+
+    .footerLabel
+    {
+        color: #656565;
+        font-family: arial;
+        clear: left;
+        margin-bottom: 0px;
+        width: 80px;
+        text-align: center;
+    }
+
+    .selectedFooterLabel
+    {
+        color: White;
+        font-family: arial;
+        clear: left;
+        margin-bottom: 0px;
+        width: 75px;
+        text-align: center;
+        background: #B4B3B3;
+        padding: 2px;
+        border-radius: 15px;
+    }
+
+}
+
+
+
+
+/*Media Query targeting only ipad in portrait mode*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+{
+    .footerLabel
+    {
+        color: #656565;
+        font-family: arial;
+        clear: left;
+        margin-bottom: 0px;
+        width: 90px;
+        text-align: center;
+    }
+    .selectedFooterLabel
+    {
+        color: White;
+        font-family: arial;
+        clear: left;
+        margin-bottom: 0px;
+        width: 85px;
+        text-align: center;
+        background: #B4B3B3;
+        padding: 2px;
+        border-radius: 15px;
+    }
+}
+

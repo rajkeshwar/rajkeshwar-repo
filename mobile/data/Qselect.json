@@ -1,0 +1,444 @@
+﻿{
+    "Favorites": [
+        {
+            "productName": "TYZ:PANELBOARD",
+            "shortDesc": "P1-Panelboard",
+			 "controlinfo":"SELECT",
+            "guid": "6000712037"
+        }
+    ],
+    "NEMA Control": [
+        {
+            "productName": "TYZ:LHCONTACTOR",
+            "shortDesc": "Lighting & Heating Contactor",
+            "guid": "6000250526"
+        },
+        {
+            "productName": "TYZ:NEMACONTACTOR",
+            "shortDesc": "NEMA Contactor",
+            "guid": "6000250527"
+        },
+        {
+            "productName": "TYZ:NEMASTARTER",
+            "shortDesc": "NEMA Starter",
+            "guid": "6000250528"
+        },
+        {
+            "productName": "TYZ:PUMPPANEL",
+            "shortDesc": "Pump Controllers",
+            "guid": "6000250531"
+        },
+        {
+            "productName": "TYZ:SOFTSTARTER",
+            "shortDesc": "Soft Starter Enclosed",
+            "guid": "6000250537"
+        },
+        {
+            "productName": "TYZ:ELEV_STARTER",
+            "shortDesc": "Elevator Starters",
+            "guid": "6000250454"
+        }
+    ],
+    "IEC/OEM Control Components": [
+        {
+            "productName": "TYZ:IEC_CONTACTOR",
+            "shortDesc": "Contactors",
+            "guid": "6000250457"
+        },
+        {
+            "productName": "TYZ:IEC_CONT_ACC",
+            "shortDesc": "Contactors Accessories",
+            "guid": "6000250456"
+        },
+        {
+            "productName": "TYZ:INTERFACE_CONV",
+            "shortDesc": "Interface Converters",
+            "guid": "6000250461"
+        },
+        {
+            "productName": "TYZ:SWITCHES",
+            "shortDesc": "Mechanical Switches",
+            "guid": "6000250513"
+        },
+        {
+            "productName": "TYZ:SWITCH_ACC",
+            "shortDesc": "Mechanical Switches Accessories",
+            "guid": "6000250512"
+        },
+        {
+            "productName": "TYZ:CURRENT_RELAY",
+            "shortDesc": "Monitoring Relays - Current",
+            "guid": "6000250453"
+        },
+        {
+            "productName": "TYZ:INSUL_RELAY",
+            "shortDesc": "Monitoring Relays - Insulation",
+            "guid": "6000250459"
+        },
+        {
+            "productName": "TYZ:LEVEL_RELAY",
+            "shortDesc": "Monitoring Relays - Level",
+            "guid": "6000250463"
+        },
+        {
+            "productName": "TYZ:POWERFAC_RELAY",
+            "shortDesc": "Monitoring Relays - Power Factor",
+            "guid": "6000250476"
+        },
+        {
+            "productName": "TYZ:SPEED_RELAY",
+            "shortDesc": "Monitoring Relays - Speed",
+            "guid": "6000250495"
+        },
+        {
+            "productName": "TYZ:TEMP_RELAY",
+            "shortDesc": "Monitoring Relays - Temperature",
+            "guid": "6000250514"
+        },
+        {
+            "productName": "TYZ:THERM_RELAY",
+            "shortDesc": "Monitoring Relays - Thermistor",
+            "guid": "6000250518"
+        },
+        {
+            "productName": "TYZ:VOLTAGE_RELAY",
+            "shortDesc": "Monitoring Relays - Voltage",
+            "guid": "6000250520"
+        },
+        {
+            "productName": "TYZ:MSP",
+            "shortDesc": "Motor Starter Protectors",
+            "guid": "6000250464"
+        },
+        {
+            "productName": "TYZ:MSP_ACC",
+            "shortDesc": "Motor Starter Protectors Accessories",
+            "guid": "6000250465"
+        },
+        {
+            "productName": "TYZ:OVERLOAD_REL",
+            "shortDesc": "Overload Relays",
+            "guid": "6000250468"
+        },
+        {
+            "productName": "TYZ:OL_RELAY_ACC",
+            "shortDesc": "Overload Relays Accessories",
+            "guid": "6000250466"
+        },
+        {
+            "productName": "TYZ:OVERLOAD_REL_2",
+            "shortDesc": "Overloads - High Feature",
+            "guid": "6000250469"
+        },
+        {
+            "productName": "TYZ:OL_RELAY_ACC_2",
+            "shortDesc": "Overloads - High Feature Accessories",
+            "guid": "6000250467"
+        },
+        {
+            "productName": "TYZ:PILOT_DEV_ACC",
+            "shortDesc": "Pilot Device Accessories",
+            "guid": "6000250470"
+        },
+        {
+            "productName": "TYZ:PILOT_DEV_STNS",
+            "shortDesc": "Pilot Device Stations",
+            "guid": "6000250471"
+        },
+        {
+            "productName": "TYZ:PILOT_DEVICES",
+            "shortDesc": "Pilot Devices",
+            "guid": "6000250472"
+        },
+        {
+            "productName": "TYZ:CONTROL_RELAY",
+            "shortDesc": "Relays - Control",
+            "guid": "6000250452"
+        },
+        {
+            "productName": "TYZ:CONT_REL_ACC",
+            "shortDesc": "Relays - Control Accessories",
+            "guid": "6000250451"
+        },
+        {
+            "productName": "TYZ:GRDFAULT_REL",
+            "shortDesc": "Relays - Ground Fault",
+            "guid": "6000250455"
+        },
+        {
+            "productName": "TYZ:INTERFACE_REL",
+            "shortDesc": "Relays - Interface",
+            "guid": "6000250462"
+        },
+        {
+            "productName": "TYZ:PLUG_IN_RELAY",
+            "shortDesc": "Relays - Plug-In",
+            "guid": "6000250474"
+        },
+        {
+            "productName": "TYZ:PLUG_IN_ACC",
+            "shortDesc": "Relays - Plug-In Accessories",
+            "guid": "6000250473"
+        },
+        {
+            "productName": "TYZ:POWER_RELAY",
+            "shortDesc": "Relays - Power",
+            "guid": "6000250475"
+        },
+        {
+            "productName": "TYZ:TIMING_RELAY",
+            "shortDesc": "Relays - Timing",
+            "guid": "6000250519"
+        },
+        {
+            "productName": "TYZ:REPLC_PARTS",
+            "shortDesc": "Replacement Parts",
+            "guid": "6000250479"
+        },
+        {
+            "productName": "TYZ:SAFETY_RELAY",
+            "shortDesc": "Safety Relays",
+            "guid": "6000250480"
+        },
+        {
+            "productName": "TYZ:STACK_LIGHTS",
+            "shortDesc": "Signal Columns & Beacons",
+            "guid": "6000763687"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_PROC",
+            "shortDesc": "Smart Overload Base Unit (pro C)",
+            "guid": "6000250489"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_PROV",
+            "shortDesc": "Smart Overload Base Unit (pro V)",
+            "guid": "6000250490"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_EXPM",
+            "shortDesc": "Smart Overload Expansion Modules",
+            "guid": "6000250482"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_ICC",
+            "shortDesc": "Smart Overload Interconnection Cables",
+            "guid": "6000250483"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_MMPC",
+            "shortDesc": "Smart Overload Measuring Module pro C",
+            "guid": "6000250485"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_MMPV",
+            "shortDesc": "Smart Overload Measuring Module pro V",
+            "guid": "6000250486"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_MISC",
+            "shortDesc": "Smart Overload Misc. Accessories",
+            "guid": "6000250484"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_OPPC",
+            "shortDesc": "Smart Overload Operator Panel pro C",
+            "guid": "6000250487"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_OPPV",
+            "shortDesc": "Smart Overload Operator Panel pro V",
+            "guid": "6000250488"
+        },
+        {
+            "productName": "TYZ:SIMOCODE_SOFT",
+            "shortDesc": "Smart Overload Software",
+            "guid": "6000250491"
+        },
+        {
+            "productName": "TYZ:SOFTSTARTR_3RW",
+            "shortDesc": "Soft Starter Open",
+            "guid": "6000250493"
+        },
+        {
+            "productName": "TYZ:SOFTSTR_ACC",
+            "shortDesc": "Softstarter Accessories",
+            "guid": "6000250494"
+        },
+        {
+            "productName": "TYZ:SS_CONTACTOR",
+            "shortDesc": "Solid State Contactors",
+            "guid": "6000250496"
+        },
+        {
+            "productName": "TYZ:SS_FUNC_MODULE",
+            "shortDesc": "Solid State Functional Modules",
+            "guid": "6000250497"
+        },
+        {
+            "productName": "TYZ:SS_RELAY",
+            "shortDesc": "Solid State Relays",
+            "guid": "6000250498"
+        },
+        {
+            "productName": "TYZ:IEC_STARTER",
+            "shortDesc": "Starters",
+            "guid": "6000250458"
+        }
+    ],
+    "Control Circuit Components": [
+        {
+            "productName": "TYZ:SUPP_PROT",
+            "shortDesc": "Control Circuit Protection",
+            "guid": "6000250510"
+        },
+        {
+            "productName": "TYZ:SUPP_PROT_ACC",
+            "shortDesc": "Control Circuit Protection Accessories",
+            "guid": "6000250511"
+        },
+        {
+            "productName": "TYZ:TERM_BLK_ACC",
+            "shortDesc": "Terminal Block Accessories",
+            "guid": "6000250515"
+        },
+        {
+            "productName": "TYZ:TERM_BLK_COMP",
+            "shortDesc": "Terminal Block Components",
+            "guid": "6000250516"
+        },
+        {
+            "productName": "TYZ:TERMINAL_BLK",
+            "shortDesc": "Terminal Blocks",
+            "guid": "6000250517"
+        }
+    ],
+    "Motor Control Centers": [
+        {
+            "productName": "TYZ:MCC_UNITONLY",
+            "shortDesc": "MCC Unit Only",
+            "guid": "6000597226"
+        },
+        {
+            "productName": "TYZ:MCC",
+            "shortDesc": "Motor Control Center",
+            "guid": "6000250996"
+        }
+    ],
+    "RESI Load Centers": [
+        {
+            "productName": "TYZ:LR_LOADCENTER",
+            "shortDesc": "Load Center",
+            "guid": "6001052985"
+        }
+    ],
+    "Multi Family Metering": [
+        {
+            "productName": "TYZ:PM_POWERMOD",
+            "shortDesc": "Power Mod",
+            "guid": "6001052983"
+        }
+    ],
+    "Power Breakers": [
+        {
+            "productName": "TYZ:CRADLE_WL",
+            "shortDesc": "Breaker Cradle WL",
+            "guid": "6000595455"
+        },
+        {
+            "productName": "TYZ:BREAKER_WL",
+            "shortDesc": "Breaker WL",
+            "guid": "6000594358"
+        }
+    ],
+    "Heavy Duty Safety Switches": [
+        {
+            "productName": "TYZ:ENCL_SWITCH",
+            "shortDesc": "Enclosed Switch",
+            "guid": "6000951071"
+        }
+    ],
+    "Molded Case Breakers": [
+        {
+            "productName": "TYZ:BREAKER_VL",
+            "shortDesc": "Breaker VL",
+            "guid": "6000250426"
+        }
+    ],
+    "Panelboards": [
+        {
+            "productName": "TYZ:PANELBOARD",
+            "shortDesc": "Panelboard",
+            "guid": "6000712037"
+        }
+    ],
+    "Switchboards": [
+        {
+            "productName": "TYZ:SB_SWITCHBOARD",
+            "shortDesc": "Switchboard",
+            "guid": "6000251083"
+        },
+        {
+            "productName": "TYZ:SB_USS",
+            "shortDesc": "Unit Substation",
+            "guid": "6000251089"
+        }
+    ],
+    "Lighting Controls": [
+        {
+            "productName": "TYZ:LC_LCP3000EZ",
+            "shortDesc": "LCP3000EZ",
+            "guid": "6000251102"
+        }
+    ],
+    "Transformers": [
+        {
+            "productName": "TYZ:17_TRANSFORMER",
+            "shortDesc": "Transformer",
+            "guid": "6000251099"
+        }
+    ],
+    "Busway Systems": [
+        {
+            "productName": "TYZ:BW_BSWY_RUN",
+            "shortDesc": "Busway and Busplugs",
+            "guid": "6000250553"
+        },
+        {
+            "productName": "TYZ:BP_XJLHD",
+            "shortDesc": "XJLHD Busplug",
+            "guid": "6000992037"
+        }
+    ],
+    "Low Voltage Switchgear": [
+        {
+            "productName": "TYZ:RC_SWITCHBOARD",
+            "shortDesc": "Type RCS Switchboard",
+            "guid": "6000250847"
+        },
+        {
+            "productName": "TYZ:SWITCHGEAR",
+            "shortDesc": "Type WL LV Switchgear",
+            "guid": "6000250848"
+        },
+        {
+            "productName": "TYZ:US_USS",
+            "shortDesc": "Unit Substation",
+            "guid": "6000250853"
+        }
+    ],
+    "Manual Line Item": [
+        {
+            "productName": "TYZ:MANUAL_LINE",
+            "shortDesc": "Manual Line",
+            "guid": "6000640103"
+        }
+    ],
+    "Energy Management": [
+        {
+            "productName": "TYZ:DM_DIGI_MTR",
+            "shortDesc": "Digital Meter",
+            "guid": "6001162187"
+        }
+    ]
+}

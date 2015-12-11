@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" />
+    <!-- <link rel="stylesheet" href="themes/corner-none.min.css" /> -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.0.css" />
+    <!-- <link rel="stylesheet" href="css/mCompasStyles.css" /> -->
+    <link rel="stylesheet" href="css/Site.css" />
+    <style type="text/css">
+    	#DConfigPanel h3 {
+		    display: inline-block;
+		    position: relative;
+		    background: #C0C0C0;
+			font-size: 1.0em;
+			color: white;
+			font-weight: normal;
+			text-shadow: 0 1px 0 #585958;
+		    padding: 5px 30px 5px 30px;
+		    -webkit-border-radius: 25px;
+			-moz-border-radius: 25px;
+			border-radius: 25px;
+    	}
+    	.wrapper {
+    		width: 50%;
+    		float: left;
+    		display: inline-block;
+    	}
+    	.ui-field-contain, .ui-mobile fieldset.ui-field-contain {
+			margin: 0.1em 0;
+		}
+		.ui-checkbox, .ui-radio {
+			margin: .1em 0;
+		}
+		.ellipsis {
+			text-overflow:ellipsis;
+			white-space:nowrap;
+		}
+    </style>
+    <script src="js/lib/jquery-1.11.0.min.js"></script>
+    <script src="js/lib/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body id="body">
+
+    <div data-role="page" id="AddConfigProdMainContainer" style="background: #EEEEEE;">
+
+        <div id="AddConfigProdHeader">
+
+            <div id="headerLeftDiv" style="width: 20%; float: left;">
+                <label id="headerCancelLabel" style="margin-left: 15%;">
+                    Cancel
+                </label>
+            </div>
+            <div id="headerRightDiv" style="width: 80%; float: left;">
+                <label id="headerLabel" style="margin-left: 25%;">
+                    Add Configurable Products</label></div>
+            <br clear="all" />
+         </div>   
+        <div data-role="content" id="AddConfigProdContentDiv" style="width: 100%; padding-left: 2px;">
+
+            <div id="qSelectDataContainer">
+
+            </div>
+                       
+        </div>
+        <div data-role="footer" style="position: absolute; bottom: 0px; width: 100%;" id="AddConfigProdFooter">
+
+            <span class="ui-title" style="overflow: auto">
+                <div id="navigator"></div> 
+            </span>
+        </div>
+        <div>
+        
+        <div data-role="popup" id="quickConfigPopUp" data-overlay-theme="b" data-dismissible="false">
+            <div style="width: 100%; height: 100%">
+                <div data-role="content" style="height: 89%; overflow: auto" id="qConfigPopUpContent">
+                    <div id="qConfigLeftContainer" style="width: 50%; height: 100%; float: left">
+                    </div>
+                    <div id="qConfigRightContainer" style="width: 50%; height: 100%; float: right">
+                    </div>
+                </div>
+                <div data-role="footer" class="qConfigFooter">
+                    <div class="ui-grid-a" style="height: 100%">
+                        <div class="ui-block-a" style="text-align: center; height: 100%; border: 1px solid rgb(177, 177, 177);"
+                            id="qConfigureBtnDiv">
+                            <span style="position: absolute; bottom: 35%; left: 25%; color: rgb(129, 129, 129)">
+                                Configure</span>
+                        </div>
+                        <div class="ui-block-b" style="text-align: center; height: 100%; border: 1px solid rgb(177, 177, 177);"
+                            onclick="exitQConfig()" id="exitQConfigBtnDiv">
+                            <span style="position: absolute; bottom: 35%; left: 75%; color: rgb(129, 129, 129)">
+                                Exit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+	<!-- Data configurator page. This page opens after clicking configure button from the popup -->
+	<div data-role="page"  id="DataConfigurator" style="background: #EEEEEE;">
+
+        <div id="dConfigHeader" class="ui-grid-b">
+
+            <div class="ui-block-a" id="dcSaveCloseDiv" onclick="SaveCloseDConfig()">
+                <label id="dcSaveCloseLabel" style="margin-left: 5%;">
+                    Save & Close
+                </label>
+            </div>
+            <div class="ui-block-b" id="dcEPMnameDiv" style="text-align: center">
+                <label id="dcEPMnameLabel"> PANEL_LP1
+                </label>
+            </div>
+            <div class="ui-block-c" id="dcMenuDiv" style="text-align: right">
+                <label id="dcMenuLabel" style="margin-right: 5%;">
+                    Menu
+                </label>
+            </div>
+        </div>
+
+        <div data-role="content" id="dcContentDiv" style="width: 100%; padding-left: 2px;">
+            <div id="DConfigPanel" style="width:96%;margin:0 auto;">            
+		    	<!-- DC dynamic controls will be loaded here --> 
+            </div>
+        </div>
+
+        <div data-role="footer" style="position: absolute; bottom: 0px; width: 100%;" id="dcFooterDiv">
+            <span class="ui-title" style="overflow: auto"></span>
+        </div>
+    </div>
+   
+	<script src="js/wireframe.dcv1.js"></script>
+	<script src="js/wireframe.dc.httprequest.js"></script>
+	<script src="js/wireframe.dc.logger.js"></script>
+	<script src="js/wireframe.dc.controls.js"></script>
+	<script src="js/wireframe.dc.utils.js"></script>
+	<script src="js/wireframe.dc.main.js"></script>
+</body>
+</html>

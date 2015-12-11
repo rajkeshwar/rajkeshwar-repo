@@ -1,0 +1,201 @@
+{
+    "config": [
+        {
+            "insId": 2,
+            "ajpWidth": 20,
+            "ajpHeight": 32,
+            "pos_y": 0,
+            "parent": "2",
+            "pos_x": 0,
+            "number": "1",
+            "ajpDepth": 0,
+            "insName": "TYZ:PANELBOARD"
+        },
+        {
+            "insId": 2,
+            "ajpWidth": 0,
+            "ajpHeight": 0,
+            "pos_y": 0,
+            "parent": "2",
+            "pos_x": 0,
+            "number": "2",
+            "ajpDepth": 0,
+            "insName": "TYZ:A7J_WORKBENCH"
+        },
+        {
+            "insId": 2,
+            "ajpWidth": 20,
+            "ajpHeight": 32,
+            "pos_y": 0,
+            "parent": "2",
+            "pos_x": 0,
+            "number": "3",
+            "ajpDepth": 5.75,
+            "insName": "TYZ:PB_SECTION"
+        },
+        {
+            "insId": 3,
+            "ajpWidth": 20,
+            "ajpHeight": 32,
+            "pos_y": 0,
+            "parent": "2",
+            "pos_x": 0,
+            "number": "7",
+            "ajpDepth": 5.75,
+            "insName": "TYZ:PB_INTERIOR"
+        },
+        {
+            "insId": 3,
+            "ajpWidth": 18.5,
+            "ajpHeight": 10.75,
+            "pos_y": 20.5,
+            "parent": "7",
+            "pos_x": 0.75,
+            "number": "8",
+            "ajpDepth": 5.75,
+            "insName": "TYZ:PB_MAIN_AREA"
+        },
+        {
+            "gridHeight": 0,
+            "insId": 4,
+            "ajpWidth": 5,
+            "ajpHeight": 4,
+            "pos_y": 3.38,
+            "parent": "8",
+            "gridWidth": 0,
+            "pos_x": 6.75,
+            "number": "9",
+            "ajpDepth": 5.75,
+            "insName": "TYZ:PB_MAINS"
+        },
+        {
+            "insId": 3,
+            "ajpWidth": 18.5,
+            "ajpHeight": 9,
+            "pos_y": 11.5,
+            "parent": "9",
+            "pos_x": 0.75,
+            "number": "10",
+            "ajpDepth": 5.75,
+            "insName": "TYZ:PB_USP_AREA"
+        },
+        {
+            "gridHeight": 0,
+            "insId": 3,
+            "ajpWidth": 18.5,
+            "ajpHeight": 9,
+            "pos_y": 0,
+            "parent": "8",
+            "gridWidth": 1,
+            "pos_x": 0,
+            "number": "11",
+            "ajpDepth": 5.75,
+            "insName": "TYZ:PB_KIT"
+        },
+        {
+            "gridHeight": 0,
+            "insId": 4,
+            "ajpWidth": 4.49,
+            "ajpHeight": 1,
+            "pos_y": 8,
+            "parent": "11",
+            "gridWidth": 1,
+            "pos_x": 3.76,
+            "number": "12",
+            "ajpDepth": 2.375,
+            "insName": "TYZ:PB_VL_MCCB"
+        },
+        {
+            "gridHeight": 0,
+            "insId": 4,
+            "ajpWidth": 4.49,
+            "ajpHeight": 1,
+            "pos_y": 8,
+            "parent": "12",
+            "gridWidth": 2,
+            "pos_x": 10.25,
+            "number": "13",
+            "ajpDepth": 0,
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "gridHeight": 0,
+            "insId": 4,
+            "ajpWidth": 4.49,
+            "ajpHeight": 1,
+            "pos_y": 7,
+            "parent": "12",
+            "gridWidth": 2,
+            "pos_x": 3.76,
+            "number": "13",
+            "ajpDepth": 0,
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "gridHeight": 0,
+            "insId": 4,
+            "ajpWidth": 4.49,
+            "ajpHeight": 1,
+            "pos_y": 7,
+            "parent": "12",
+            "gridWidth": 2,
+            "pos_x": 10.25,
+            "number": "13",
+            "ajpDepth": 0,
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "gridHeight": 0,
+            "insId": 4,
+            "ajpWidth": 4.49,
+            "ajpHeight": 1,
+            "pos_y": 6,
+            "parent": "12",
+            "gridWidth": 2,
+            "pos_x": 3.76,
+            "number": "13",
+            "ajpDepth": 0,
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "gridHeight": 0,
+            "insId": 4,
+            "ajpWidth": 4.49,
+            "ajpHeight": 1,
+            "pos_y": 6,
+            "parent": "12",
+            "gridWidth": 2,
+            "pos_x": 10.25,
+            "number": "13",
+            "ajpDepth": 0,
+            "insName": "TYZ:PB_SPACE"
+        },
+        {
+            "insId": 3,
+            "ajpWidth": 18.5,
+            "ajpHeight": 10.75,
+            "pos_y": 0.75,
+            "parent": "12",
+            "pos_x": 0.75,
+            "number": "30",
+            "ajpDepth": 5.75,
+            "insName": "TYZ:PB_SFD_AREA"
+        },
+        {
+            "insId": 3,
+            "pos_y": 0,
+            "parent": "8",
+            "pos_x": 0,
+            "number": "31",
+            "insName": "TYZ:PB_ENCLOSURE"
+        },
+        {
+            "insId": 3,
+            "pos_y": 0,
+            "parent": "7",
+            "pos_x": 0,
+            "number": "32",
+            "insName": "TYZ:PB_FRONT"
+        }
+    ]
+}

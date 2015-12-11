@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Common ajax</title>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+
+	var logger = (function(){
+
+		var
+		/**
+		 * Option for logger if true log will be printed 
+		 * on the console. Good to enable in dev and dissable 
+		 * on production environment
+		 **/
+		options = {
+			logger : true
+		}, 
+		/**
+		 * @param : var-args of params to print on the console.
+		 * Logs the debug and log messages on the console
+		 **/
+		log = function( msg ) {
+			Array.prototype.unshift.apply(arguments, ["log"]);
+			options.logger && _logger.apply( this, arguments );
+		},
+		/**
+		 * @param : var-args of params to print on the console.
+		 * Logs the warning messages on the console prepended with warning icon.
+		 **/
+		warn = function( msg ) {
+			Array.prototype.unshift.apply(arguments, ["warn"]);
+			options.logger && _logger.apply( this, arguments );
+		},
+		/**
+		 * @param : var-args of params to print on the console.
+		 * Logs the error messages on the console in red color.
+		 **/
+		error = function( msg ) {
+			Array.prototype.unshift.apply(arguments, ["error"]);
+			options.logger && _logger.apply( this, arguments );
+		},
+		/**
+		 * 
+		 * Custom logger which will work in all the browsers.
+		 * Logs the message with the time-stampt.
+		 * If the <code>logger = true</code> configured in the options 
+		 * then it logs the message on the console. 
+		 * Setting logger = false will dissable logger to print message.
+		 **/
+		_logger = function( logType ){
+			
+				// Remove first argument
+			var args = Array.prototype.slice.apply(arguments, [1]),
+			
+				// Prepend timestamp
+				date = new Date(),
+				// time which includes hour:min:seconds and milliseconds
+				timestamp = date.getHours() + ":" + date.getMinutes() + ":" +
+					  date.getSeconds() + "." + date.getMilliseconds();
+			
+				args[0] = timestamp + " - " + args[0];
+			
+			window.console && window.console[logType] && window.console[logType].apply( window.console, args );
+		};
+		
+		return {
+			log : log,
+			warn : warn,
+			error : error
+		}
+		
+	})();
+		
+	var httpRequest = function( config ) { 		
+		
+		var self     = this,
+			dfrd     = $.Deferred(),
+			options  = {
+				url      : config.url,
+				async    : true,
+				type     : config.type || 'get',
+				dataType : 'json',
+				data     : config.data
+			},
+			/**
+			 * @param	: Object params
+			 * Calls command 0 with modelName to launch configuration. 
+			 **/
+			i18msg = (function(){
+				return {
+					'error'                : 'Error',
+					'errAccess'            : 'Access denied.',
+					'errConnect'           : 'Unable to connect to backend.',
+					'errAbort'             : 'Connection aborted.',
+					'errTimeout'           : 'Connection timeout.',
+					'errNotFound'          : 'Backend not found.',
+					'errResponse'          : 'Invalid backend response.',
+					'errCmdParams'         : 'Invalid parameters for command "$1".',
+					'errDataNotJSON'       : 'Data is not JSON.',
+					'errDataEmpty'         : 'Data is empty.',
+					'errCmdReq'            : 'Backend request requires number.'
+				}
+			})(),
+			/**
+			 * Request error handler. Reject dfrd with correct error message.
+			 *
+			 * @param jqxhr  request object
+			 * @param String request status
+			 * @return void
+			 **/
+			error = function(xhr, status) {
+				var error;
+				
+				switch (status) {
+					case 'abort':
+						error = xhr.quiet ? '' : ['errConnect', 'errAbort'];
+						break;
+					case 'timeout':	    
+						error = ['errConnect', 'errTimeout'];
+						break;
+					case 'parsererror': 
+						error = ['errResponse', 'errDataNotJSON'];
+						break;
+					default:
+						if (xhr.status == 403) {
+							error = ['errConnect', 'errAccess'];
+						} else if (xhr.status == 404) {
+							error = ['errConnect', 'errNotFound'];
+						} else if (xhr.status == 500) {
+							error = ['errConnect', 'errNotFound'];
+						} else if (!xhr.responseText.trim()) {
+							error = ['errConnect', 'errNotFound'];
+						} else {
+							error = 'errConnect';
+						} 
+				}
+				
+				dfrd.reject( xhr, status, error );
+			},
+			/**
+			 * Request success handler. Valid response data and reject/resolve dfrd.
+			 *
+			 * @param Object  response data
+			 * @param String request status
+			 * @return void
+			 **/
+			success = function( response, xhr, text ) {
+
+				// if (!response) {
+				// 	return dfrd.reject(['errResponse', 'errDataEmpty'], xhr);
+				// } else if (!$.isPlainObject(response)) {
+				// 	return dfrd.reject(['errResponse', 'errDataNotJSON'], xhr);
+				// } else if (response.error) {
+				// 	return dfrd.reject(response.error, xhr);
+				// } else if (response.code) {
+				// 	return dfrd.reject(response, 'error');
+				// } 
+
+				dfrd.resolve( response, xhr, text );
+			};
+					
+			logger.log('Request - : ', config.data);
+			
+			$.ajax(options).fail(error).done(success);
+			
+			//self.cookie('raj', 'Rajkeshwar');
+			//self.cookie('phone', '8880136913');
+			
+			dfrd.done(function( resp, status, text ) {
+				logger.log('Response - : ', resp);				
+			});
+			
+			dfrd.fail(function( xhr, status, text ) {
+				logger.error('httpRequest xhr: (%o), status: (%o), text: (%o)', xhr, status, text);
+			});
+			
+			dfrd.always(function( xhr ){
+				// console.log('Useful to hide ajax progress bar')
+			});
+			
+			return dfrd.promise();
+		}
+
+
+		function callAjax(){
+			httpRequest({
+				url: 'https://api.github.com/users/peterbe/gists', 
+				'data':{name:'Rajkeshwar'}
+			}).then(function(resp){
+				console.log(resp);
+			})
+		};
+
+		function callAjax2(){
+			httpRequest({
+				url: 'https://api.github.com/users/peterbe/asdf/gists', 
+				'data':{name:'Rajkeshwar'}
+			}).then(function(resp){
+				console.log(resp);
+			})
+		};
+
+	</script>
+</head>
+<body>
+	<h1>Ajax test</h1>	
+	<button onclick="callAjax()">call ajax -1 </button>
+	<button onclick="callAjax2()">call ajax -2 </button>
+	<button onclick="httpRequest({url: 'https://api.github.com/users/peterbe/gists'})">call ajax -3 </button>
+</body>
+</html>

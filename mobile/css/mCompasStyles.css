@@ -1,0 +1,250 @@
+﻿ #body
+        {
+        :background:#EEEEEE;;
+        }
+        
+        #AddConfigProdHeader
+        {
+            width: 99.7%;
+            background:white;
+            margin-top: 0.625em;
+            border-top-left-radius: 0.750em;
+            border-top-right-radius: 0.813em;
+            margin-left: 0.125em;
+            margin-right: 0.313em;
+        }
+        
+        
+        
+        
+        #navigator
+        {
+            width: 100%;
+            padding: 0;
+            height: 14px;
+            z-index: 999;
+        }
+        #navigator a
+        {
+            display: inline-block;
+            width: 1.000em; /*16px*/
+            height: 1.000em; /*16px*/
+            text-indent: -999em;
+            background: #fff;
+            border-radius: 0.625em;
+            -moz-border-radius: 0.625em;
+            -webkit-border-radius: 0.625em;
+            box-shadow: 0 0 1px 1px #707173;
+            margin-right: 1.250em;/*20px*/
+        }
+        #navigator a
+        {
+            background: rgb(160, 157, 157);
+        }
+        #navigator a.activePage
+        {
+            background: rgb(252, 248, 248);
+        }
+        #headerLabel, #headerCancelLabel
+        {
+            font-size: 1.250em; /*20px*/
+            font-family: Arial;
+            margin: 0.500em;
+            color: rgb(129, 129, 129);
+        }
+
+        
+
+#qSelectDataContainer.ui-listview li{ 
+   margin: 0.625em;
+   border-radius: 1.500em;
+}
+#qSelectDataContainer .ui-listview>li.ui-first-child>a.ui-btn, #qSelectDataContainer .ui-listview>li.ui-last-child>a.ui-btn, #qSelectDataContainer .ui-listview>li.ui-first-child, #qSelectDataContainer .ui-listview>li.ui-last-child
+{
+    border-radius: 1.500em;
+     
+}
+
+
+
+#qSelectDataContainer .ui-listview {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#qSelectDataContainer .ui-listview li a
+{ 
+           /*  margin:0.625em;*/ /*10px*/
+            border-radius: 1.500em;
+ }
+ 
+ 
+/* #qSelectDataContainer .ui-listview li a:nth-child(1)
+{ 
+             margin:0.625em; /*10px*/
+           /* border-radius: 1.500em;
+ }
+ #qSelectDataContainer .ui-listview li a:nth-child(2)
+ {
+ margin: 0.625em;
+border-bottom-right-radius: 1.500em;
+border-top-right-radius: 1.500em;
+}*/
+
+.quickConfigSplitButton
+{
+    border-bottom-right-radius: 1.500em;
+    border-top-right-radius: 1.500em;
+    border-top-left-radius:0em;
+    border-bottom-left-radius:0em;
+    
+}
+ 
+
+#qSelectDataContainer .ui-listview > li > a.ui-btn {
+border-bottom-width: 1px;
+}
+
+.columns
+{
+    -moz-columns: 4 18.750em; /* 300px*/
+    -webkit-columns: 4 18.750em;
+    columns: 4 18.750em;
+    
+  }
+  
+  .columns li
+  {
+    
+     -webkit-column-break-inside: avoid;
+   /* -webkit-break-inside: avoid-column;*/
+  display:inline-block;
+      margin-bottom: 10px;
+      width:18.750em;  /* width:18.750em; width:300px*/
+     
+      height:2.813em
+  }
+  
+  .groupLabel
+  {
+      /*min-width:300px, max-width:350px, height:30px*/
+      background: rgb(238, 238, 238);
+      /*min-width:18.750em;*/
+     /* max-width:21.875em;*/
+     width:18.750em;
+           height:1.875em;
+      background: rgb(238, 238, 238);
+  }
+  
+  .groupLabelAnchor
+  {
+      background: rgb(238, 238, 238);
+	   border:0px;
+  }
+  
+  .QuickConfigColumns
+  {
+       -moz-columns: 2 100px; /* 300px*/
+    -webkit-columns: 2 100px;
+    columns: 2 100px;
+  }
+  
+  .QuickConfigColumns div
+  {
+       -webkit-column-break-inside: avoid;
+       /*display:inline-block;*/
+  }
+  
+  #qConfigPopUpContent  .ui-controlgroup-horizontal .ui-controlgroup-controls {
+        display: inline-block;
+        vertical-align: middle;
+        width:100%;
+}
+
+#qConfigPopUpContent .ui-controlgroup-horizontal .ui-controlgroup-controls .ui-radio
+{
+    float: left;
+    clear: none;
+    width:50%;
+}
+
+.qConfigFooter
+ {
+        height:6%;  
+ }
+ 
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                            Media Queries
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+  
+  @media only screen  and (max-width:760px) and (orientation : portrait)
+  {
+      .columns
+      {
+        -moz-columns: 3 17.188em ;/*275px*/ /* 15.625em 250px*/
+        -webkit-columns: 3 17.188em ;
+        columns: 3 17.188em ;
+        }
+      
+         .columns li
+        {
+            
+         
+         -webkit-column-break-inside: avoid;
+         width:17.188em; /* Width:275px*/
+         height:2.813em; /*height:45px*/
+                             
+        /*  -webkit-break-inside: avoid-column;*/
+              
+        display:inline-block;
+        
+           
+         
+         }
+         
+      .qConfigFooter
+      {
+          height:7%;
+       }
+              
+    
+  }
+  
+    
+  @media only screen and (orientation : landscape) 
+  {
+                     
+      .qConfigFooter
+      {
+        height:12%;
+         
+      }
+      
+               
+  }
+  
+  
+  
+  /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                        DC Styles
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#dConfigHeader
+{
+     width: 99.7%;
+   background:white;
+}
+
+#dConfigHeader label
+{
+  font-size: 1.250em; /*20px*/
+  font-family: Arial;
+  margin:0.625em;
+  color: rgb(129, 129, 129);
+ }
+  
+  
