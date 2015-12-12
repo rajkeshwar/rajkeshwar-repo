@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<script src="../lib/lodash.min.js"></script>
+	<script src="../lib/precode.js"></script>
+	<title>Anguarjs first example</title>
+</head>
+<body>
+  
+  <h1>Giving Up On An Unstable Digest</h1>
+  <script type="text/javascript">
+
+	function Scope() {
+	  this.$$watchers = [];
+	}
+
+	Scope.prototype.$watch = function(watchFn, listenerFn) {
+	  var watcher = {
+	    watchFn: watchFn,
+	    listenerFn: listenerFn || function() { }
+	  };
+	  this.$$watchers.push(watcher);
+	};
+
+	Scope.prototype.$$digestOnce = function() {
+	  var self  = this;
+	  var dirty;
+	  _.forEach(this.$$watchers, function(watch) {
+	    var newValue = watch.watchFn(self);
+	    var oldValue = watch.last;
+	    if (newValue !== oldValue) {
+	      watch.listenerFn(newValue, oldValue, self);
+	      dirty = true;
+	      watch.last = newValue;
+	    }
+	  });
+	  return dirty;
+	};
+
+	Scope.prototype.$digest = function(){
+	  var ttl = 10;
+	  var dirty;
+	  do {
+	    dirty = this.$$digestOnce();
+	    if (dirty && !(ttl--)) {
+	      throw "10 digest iterations reached";
+	    }
+	  } while (dirty);
+	};
+
+	var scope = new Scope();
+	scope.counter1 = 0;
+	scope.counter2 = 0;
+
+	scope.$watch(
+	  function(scope) {
+	    return scope.counter1;
+	  },
+	  function(newValue, oldValue, scope) {
+	    scope.counter2++;
+	  }
+	);
+
+	scope.$watch(
+	  function(scope) {
+	    return scope.counter2;
+	  },
+	  function(newValue, oldValue, scope) {
+	    scope.counter1++;
+	  }
+	);
+
+	scope.$digest();  	
+
+  </script>
+</body>
+</html>

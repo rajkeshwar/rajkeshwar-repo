@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<script src="../lib/lodash.min.js"></script>
+	<script src="../lib/precode.js"></script>
+	<title>Anguarjs first example</title>
+</head>
+<body>
+  
+  <h1>Anguarjs first example</h1>
+  <script type="text/javascript">
+
+  	function Scope() {
+	  this.$$watchers = [];
+	}
+
+	Scope.prototype.$watch = function(watchFn, listenerFn) {
+	  var watcher = {
+	    watchFn: watchFn,
+	    listenerFn: listenerFn || function() {}
+	  };
+	  this.$$watchers.push(watcher);
+	};
+
+	Scope.prototype.$digest = function() {
+	  var self = this;
+	  _.forEach(this.$$watchers, function(watch) {
+	    var newValue = watch.watchFn(self);
+	    var oldValue = watch.last;
+	    if (newValue !== oldValue) {
+	      watch.listenerFn(newValue, oldValue, self);
+	      watch.last = newValue;
+	    }
+	  });  
+	};
+
+	var scope = new Scope();
+	scope.firstName = 'Joe';
+	scope.counter = 0;
+
+	scope.$watch(
+	  function(scope) {
+	    return scope.counter;
+	  },
+	  function(newValue, oldValue, scope) {
+	    scope.counterIsTwo = (newValue === 2);
+	  }
+	);
+
+	scope.$watch(
+	  function(scope) {
+	    return scope.firstName;
+	  },
+	  function(newValue, oldValue, scope) {
+	    scope.counter++;
+	  }
+	);
+
+	// After the first digest the counter is 1
+	scope.$digest();
+	console.log(scope.counter === 1);
+
+	// On the next change the counter becomes two, but our other watch hasn't noticed this yet
+	scope.firstName = 'Jane';
+	scope.$digest();
+	console.log(scope.counter === 2);
+	console.log(scope.counterIsTwo); // false
+
+	// Only sometime in the future, when $digest() is called again, does our other watch get run
+	scope.$digest();
+	console.log(scope.counterIsTwo); // true
+
+  </script>
+</body>
+</html>
