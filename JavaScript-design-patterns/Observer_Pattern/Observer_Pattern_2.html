@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Observer Pattern</title>
+	<script type="text/javascript">
+	    function Click() {
+	        this.handlers = [];  // observers
+	    }
+	     
+	    Click.prototype = {
+	     
+	        subscribe: function(fn) {
+	            this.handlers.push(fn);
+	        },
+	     
+	        unsubscribe: function(fn) {
+	            this.handlers = this.handlers.filter(
+	                function(item) {
+	                    if (item !== fn) {
+	                        return item;
+	                    }
+	                }
+	            );
+	        },
+	     
+	        fire: function(o, thisObj) {
+	            var scope = thisObj || window;
+	            this.handlers.forEach(function(item) {
+	                item.call(scope, o);
+	            });
+	        }
+	    }
+	     
+	    // log helper
+	     
+	    var log = (function() {
+	        var log = "";
+	     
+	        return {
+	            add: function(msg) { log += msg + "\n"; },
+	            show: function() { alert(log); log = ""; }
+	        }
+	    })();
+	     
+	    function run() {
+	     
+	        var clickHandler = function(item) { 
+	            log.add("fired: " + item); 
+	        };
+	     
+	        var click = new Click();
+	     
+	        click.subscribe(clickHandler);
+	        click.fire('event #1');
+	        click.unsubscribe(clickHandler);
+	        click.fire('event #2');
+	        click.subscribe(clickHandler);
+	        click.fire('event #3');
+	     
+	        log.show();
+	    }
+	</script>
+</head>
+<body>
+	<h1>Observer Pattern</h1>
+	<div class="ptext">
+	    The objects participating in this pattern are:<br><br>
+	    <ul>
+	        <li>
+	            <b>Subject</b> -- In sample code: <b style="color:#088;">Click</b>
+	            <ul>
+	                <li>maintains list of observers. Any number of Observer objects may observe a Subject</li>
+	                <li>implements an interface that lets observer objects subscribe or unsubscribe</li>
+	                <li>sends a notification to its observers when its state changes</li>
+	            </ul>
+	        </li>
+	        <li>
+	            <b>Observers</b> -- In sample code: <b style="color:#088;">clickHandler</b>
+	            <ul>
+	                <li>has a function signature that can be invoked when Subject changes (i.e. event occurs)</li>
+	            </ul>
+	        </li>
+	    </ul>
+	</div>
+</body>
+</html>

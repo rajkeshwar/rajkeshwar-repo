@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prototype Pattern</title>
+	<script type="text/javascript">
+
+		var MY_GLOBAL = 1;
+
+		var vehicle = {
+		  getModel: function () {
+		    console.log( "The model of this vehicle is.." + this.model );
+		  }
+		};
+
+		var car = Object.create(vehicle, {
+
+		  "id": {
+		    value: ++MY_GLOBAL,
+		    // writable:false, configurable:false by default
+		    enumerable: true 
+		  },
+
+		  "model": {
+		    value: "Ford",
+		    enumerable: true
+		  }
+
+		});
+
+		console.log(vehicle);
+		console.log(car);
+
+	</script>
+</head>
+<body>
+	<h1>Prototype Pattern</h1>
+</body>
+</html>

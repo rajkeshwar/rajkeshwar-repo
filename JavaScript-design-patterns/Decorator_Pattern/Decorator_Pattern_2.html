@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Decorator Pattern</title>
+	<script type="text/javascript">
+		var User = function(name) {
+		    this.name = name;
+		 
+		    this.say = function() {
+		        log.add("User: " + this.name);
+		    };
+		}
+		 
+		var DecoratedUser = function(user, street, city) {
+		    this.user = user;
+		    this.name = user.name;  // ensures interface stays the same
+		    this.street = street;
+		    this.city = city;
+		 
+		    this.say = function() {
+		        log.add("Decorated User: " + this.name + ", " +
+		                   this.street + ", " + this.city);
+		    };
+		}
+		 
+		// logging helper
+		 
+		var log = (function() {
+		    var log = "";
+		 
+		    return {
+		        add: function(msg) { log += msg + "\n"; },
+		        show: function() { alert(log); log = ""; }
+		    }
+		})();
+		 
+		function run() {
+		 
+		    var user = new User("Kelly");
+		    user.say();
+		 
+		    var decorated = new DecoratedUser(user, "Broadway", "New York");
+		    decorated.say();
+		 
+		    log.show();
+		}
+	</script>
+</head>
+<body>
+	<h1>Decorator Pattern</h1>
+	<div class="ptext">
+	    The objects participating in this pattern are:<br><br>
+	    <ul>
+	        <li>
+	            <b>Client</b> -- In sample code: the run() function
+	            <ul>
+	                <li>maintains a reference to the decorated Component</li>
+	            </ul>
+	        </li>
+	        <li>
+	            <b>Component</b> -- In sample code: <b style="color:#088;">User</b>
+	            <ul>
+	                <li>object to which additional functionality is added</li>
+	            </ul>
+	        </li>
+	        <li>
+	            <b>Decorator</b> -- In sample code: <b style="color:#088;">DecoratedUser</b>
+	            <ul>
+	                <li>'wraps around' Component by maintaining a reference to it</li>
+	                <li>defines an interface that conforms to Component's interface</li>
+	                <li>implements the additional functionality (addedMembers in diagram)</li>
+	            </ul>
+	        </li>
+	    </ul>
+	</div>
+</body>
+</html>

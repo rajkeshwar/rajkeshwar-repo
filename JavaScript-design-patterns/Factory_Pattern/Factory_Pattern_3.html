@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factory Pattern</title>
+	<script type="text/javascript">
+		    function Factory() {
+
+		        this.createEmployee = function (type) {
+		            var employee;
+		     
+		            if (type === "fulltime") {
+		                employee = new FullTime();
+		            } else if (type === "parttime") {
+		                employee = new PartTime();
+		            } else if (type === "temporary") {
+		                employee = new Temporary();
+		            } else if (type === "contractor") {
+		                employee = new Contractor();
+		            }
+		     
+		            employee.type = type;
+		     
+		            employee.say = function () {
+		                log.add(this.type + ": rate " + this.hourly + "/hour");
+		            }
+		     
+		            return employee;
+		        }
+		    }
+		     
+		    var FullTime = function () {
+		        this.hourly = "$12";
+		    };
+		     
+		    var PartTime = function () {
+		        this.hourly = "$11";
+		    };
+		     
+		    var Temporary = function () {
+		        this.hourly = "$10";
+		    };
+		     
+		    var Contractor = function () {
+		        this.hourly = "$15";
+		    };
+		     
+		    // log helper
+		    var log = (function () {
+		        var log = "";
+		     
+		        return {
+		            add: function (msg) { log += msg + "\n"; },
+		            show: function () { alert(log); log = ""; }
+		        }
+		    })();
+		     
+		    function run() {
+		        var employees = [];
+		        var factory = new Factory();
+		     
+		        employees.push(factory.createEmployee("fulltime"));
+		        employees.push(factory.createEmployee("parttime"));
+		        employees.push(factory.createEmployee("temporary"));
+		        employees.push(factory.createEmployee("contractor"));
+		        
+		        for (var i = 0, len = employees.length; i < len; i++) {
+		            employees[i].say();
+		        }
+		     
+		        log.show();
+		    }
+	</script>
+</head>
+<body>
+	<h1>Factory Pattern</h1>
+	<div class="ptext">
+	    The objects participating in this pattern are:
+	    <br><br>
+	    <ul>
+	        <li>
+	            <b>Creator</b> -- In sample code: <b style="color:#088;">Factory</b>
+	            <ul>
+	                <li>the 'factory' object that creates new products</li>
+	                <li>implements 'factoryMethod' which returns newly created products</li>
+	            </ul>
+	        </li>
+	        <li>
+	            <b>AbstractProduct</b> -- not used in JavaScript
+	            <ul>
+	                <li>declares an interface for products</li>
+	            </ul>
+	        </li>
+	        <li>
+	            <b>ConcreteProduct</b> -- In sample code: <b style="color:#088;">Employees</b>
+	            <ul>
+	                <li>the product being created</li>
+	                <li>all products support the same interface (properties and methods)</li>
+	            </ul>
+	        </li>
+	    </ul>
+	</div>
+</body>
+</html>

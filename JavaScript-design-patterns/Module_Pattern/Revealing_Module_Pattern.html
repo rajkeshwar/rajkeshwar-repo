@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Revealing Module Pattern</title>
+	<script type="text/javascript">
+
+	var myRevealingModule = function () {
+
+        var privateVar = "Ben Cherry",
+            publicVar  = "Hey there!";
+
+        function privateFunction() {
+            console.log( "Name:" + privateVar );
+        }
+        
+        function publicSetName( strName ) {
+            privateName = strName;
+        }
+
+        function publicGetName() {
+            privateFunction();
+        }
+
+        // Reveal public pointers to  
+        // private functions and properties
+        return {
+            setName: publicSetName,
+            greeting: publicVar,
+            getName: publicGetName
+        };
+
+    }();
+
+	myRevealingModule.setName("Paul Kinlan");
+	myRevealingModule.getName();
+
+	</script>
+</head>
+<body>
+	<h1>Revealing Module Pattern</h1>
+</body>
+</html>
