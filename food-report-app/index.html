@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en" data-ng-app="foodReport">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Food Report app</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-ng-controller="FoodController">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Food Report</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Type food here..." class="form-control">
+            </div>
+            <button type="submit" ng-click="getFoodReport()" class="btn btn-success">Get Food Report</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <pre>{{data | json}}</pre> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>View result</h2>
+          <select class="form-control" ng-model="itemNumber">
+            <option data-ng-repeat="number in itemList" value="{{number}}">{{number}}</option>
+          </select>
+          <table class="table table-bordered table-striped">
+             <colgroup>
+                <col class="col-xs-1">
+                <col class="col-xs-7">
+             </colgroup>
+             <thead>
+                <tr>
+                   <th>Class</th>
+                   <th>Description</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr data-ng-repeat="(key, value) in data.report.food | limitObjectFromTo: 0:6">
+                   <th scope="row">{{key}}</th>
+                   <td>{{value}}</td>
+                </tr>
+             </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <h2>Basic Report</h2>
+          <select class="form-control" ng-model="selectedItem">
+            <option value="01001">Butter, salted</option>
+            <option value="01002">Butter, whipped, with salt</option>
+            <option value="01003">Butter oil, anhydrous</option>
+            <option value="01004">Cheese, blue</option>
+            <option value="01005">Cheese, brick</option>
+            <option value="01006">Cheese, brie</option>
+          </select>
+          <table class="table table-bordered">
+            <thead>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Group</th>
+              <th>Value</th>
+              <th>SE</th>
+            </thead>
+            <tbody>
+              <tr data-ng-repeat="nut in nutrients">
+                <td>{{nut.nutrient_id}}</td>
+                <td>{{nut.name}}</td>
+                <td>{{nut.group}}</td>
+                <td>{{nut.value}}</td>
+                <td>{{nut.se}}</td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2015 Company, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="assets/js/angular.js"></script>
+    <script src="app/app.config.js"></script>
+  </body>
+</html>
