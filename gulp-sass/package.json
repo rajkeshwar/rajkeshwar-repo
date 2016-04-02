@@ -1,0 +1,30 @@
+{
+  "name": "gulp-sass",
+  "version": "1.0.0",
+  "description": "A sample sass test",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "browser-sync": "^2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/rajkeswar.git"
+  },
+  "keywords": [
+    "sass",
+    "gulp",
+    "javascript"
+  ],
+  "author": "Rajkeshwar Prasad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/rajkeswar/issues"
+  },
+  "homepage": "https://github.com/github.com/rajkeswar#readme"
+}

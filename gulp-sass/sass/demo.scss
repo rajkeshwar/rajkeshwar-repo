@@ -1,0 +1,87 @@
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$panel-height: 470px;
+$panel-width: 975px;
+$container-height: 650px;
+$icon-top: $container-height / 3;
+
+.container {
+	background-image: url('img/engagepattern_cnl18ese_k2@2x.jpg');
+	background-repeat: repeat-x;
+	height: $container-height;
+
+	.menubar {
+		height:60px;
+		background-color:#006888;
+	}
+
+	.panel {
+		margin: 0 auto;
+		top: 65px;
+		width: $panel-width;
+		height:$panel-height;
+		border-radius: 12px;
+		background-color: #ffffff;
+		position:relative;
+		z-index:1;
+
+		.toggle {
+			position:relative;
+			top: $panel-height / 2 - 80;
+			height:160px;
+			width: 270px;
+			display:inline-block;
+			@include respond-to(handhelds) { left: 100px;}
+  		@include respond-to(medium-screens) { left: 300px; }
+  		@include respond-to(wide-screens) { float: none; }
+
+			&.correct {
+				background-image: url('img/correct.png');
+				background-size: 270px 160px;
+				background-repeat: no-repeat;
+			}
+
+			&.incorrect {
+				background-image: url('img/incorrect.png');
+				background-size: 270px 160px;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	.icon {
+		margin-top: $icon-top;
+		height: 130px;
+		width: 75px;
+		z-index: 20;
+
+		&.prev {
+			background-image: url('img/engageback_cnl18ese_k2@2x.png');
+			background-size: 75px 130px;
+			background-repeat: no-repeat;
+			float: left;
+		}
+
+		&.next {
+			background-image: url('img/engageforward_cnl18ese_k2@2x.png');
+			background-size: 75px 130px;
+			background-repeat: no-repeat;
+			float: right;
+		}
+	}
+}
+
+$break-small: 320px;
+$break-large: 1024px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
