@@ -67,6 +67,7 @@ body {
     margin:2px 0; 
     background:#ececec; 
     border: 1px solid #333; 
+    color: #333;
 } 
   
 #shopping-cart .product_name { 

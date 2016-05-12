@@ -66,6 +66,7 @@ var CORE = (function () {
 		    return jQuery.isPlainObject(obj);          
 		},
  		create_module : function (moduleID, creator) { 
+ 			debugger;
 		    var temp; 
 		    if (typeof moduleID === 'string' && typeof creator === 'function') { 
 		        temp = creator(Sandbox.create(this, moduleID)); 

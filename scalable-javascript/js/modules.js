@@ -157,3 +157,6 @@ CORE.create_module("shopping-cart", function (sb) {
         } 
     }; 
 });
+
+
+CORE.start_all();
